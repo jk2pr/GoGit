@@ -19,32 +19,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhW-R8-6n5">
-                                <rect key="frame" x="115" y="535" width="175" height="30"/>
+                                <rect key="frame" x="100" y="318" width="175" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.83116094559585496" green="0.48654171461089529" blue="0.39224496578052626" alpha="0.41219190140845069" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Click Here"/>
+                                <state key="normal" title="Hi this is Splash"/>
                                 <connections>
-                                    <action selector="onClick:" destination="zZp-yf-NEf" eventType="touchUpInside" id="7gC-Sl-xz4"/>
-                                    <action selector="test:" destination="zZp-yf-NEf" eventType="touchUpInside" id="XEJ-wU-7tS"/>
+                                    <action selector="buttonClick:" destination="1o1-kv-Jmd" eventType="touchUpInside" id="W32-4v-h6T"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is my label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hT4-97-fRj">
-                                <rect key="frame" x="115" y="298" width="175" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.18575382373034124" green="0.13265992498120255" blue="0.83116094559585496" alpha="0.41219190140845069" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.80929138303014503" green="0.82514977331606221" blue="0.2581013350304654" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="zZp-yf-NEf" userLabel="Exit" sceneMemberID="exit"/>
+                <exit id="1o1-kv-Jmd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-274.39999999999998" y="143.47826086956522"/>
+            <point key="canvasLocation" x="-1060" y="62"/>
         </scene>
     </scenes>
 </document>
