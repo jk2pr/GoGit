@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
 import AlamofireSwiftyJSON
 import SwiftyJSON
+import SDWebImage
 
 class GitHubUserCell: UITableViewCell {
     
@@ -33,7 +34,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! GitHubUserCell
         let data=arrRes[indexPath.row]
-        cell.urlLabel.text=data.login
+        cell.urlLabel.text=data.html_url
+        cell.namelabel.text=data.login
+        cell.imageview=cell.viewWithTag(1) as! UIImageView
+        let url=URL(string:data.avatar_url!)
+        cell.imageview.sd_setImage(with: url)
       
         return cell
     }
@@ -64,14 +69,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
                         self.arrRes.append(gitHubUser)
                     }
-                    
+                if self.arrRes.count > 0 {
+                    //  print(self.arrRes)
+                    self.tableView.reloadData()
+                }
                 }
                    // self.arrRes = items as! [String:AnyObject]
                 }
-                if self.arrRes.count > 0 {
-                  //  print(self.arrRes)
-                  self.tableView.reloadData()
-                }
+        
             }
         }
         // Do any additional setup after loading the view, typically from a nib.
