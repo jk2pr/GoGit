@@ -12,6 +12,8 @@
 		D479A24C1FE4CEAE00632DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D479A24A1FE4CEAE00632DC0 /* Main.storyboard */; };
 		D479A24E1FE4CEAE00632DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D479A24D1FE4CEAE00632DC0 /* Assets.xcassets */; };
 		D479A2511FE4CEAE00632DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D479A24F1FE4CEAE00632DC0 /* LaunchScreen.storyboard */; };
+		D47BB0CD1FEBFB9C00FCD8C2 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47BB0CC1FEBFB9C00FCD8C2 /* SDWebImage.framework */; };
+		D47BB0CE1FEBFB9C00FCD8C2 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D47BB0CC1FEBFB9C00FCD8C2 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D47DEBAB1FE5F963007EB147 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47DEBA61FE5F960007EB147 /* Alamofire.framework */; };
 		D47DEBAC1FE5F963007EB147 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D47DEBA61FE5F960007EB147 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D47DEBAD1FE5F963007EB147 /* AlamofireSwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47DEBA71FE5F961007EB147 /* AlamofireSwiftyJSON.framework */; };
@@ -19,7 +21,6 @@
 		D47DEBAF1FE5F963007EB147 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47DEBA91FE5F962007EB147 /* SwiftyJSON.framework */; };
 		D47DEBB01FE5F963007EB147 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D47DEBA91FE5F962007EB147 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D47DEBB31FE6219A007EB147 /* GitHubUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DEBB21FE62199007EB147 /* GitHubUserData.swift */; };
-		D4D06EBC1FE88A7E007CA826 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D06EBA1FE88A7E007CA826 /* SDWebImage.framework */; };
 		D4D06EBD1FE88A7E007CA826 /* SDWebImage.framework.dSYM in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D06EBB1FE88A7E007CA826 /* SDWebImage.framework.dSYM */; };
 		D4D06EBE1FE88AA4007CA826 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D06EBA1FE88A7E007CA826 /* SDWebImage.framework */; };
 		D4D06EBF1FE88AA4007CA826 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4D06EBA1FE88A7E007CA826 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -32,6 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D47BB0CE1FEBFB9C00FCD8C2 /* SDWebImage.framework in Embed Frameworks */,
 				D4D06EBF1FE88AA4007CA826 /* SDWebImage.framework in Embed Frameworks */,
 				D47DEBAC1FE5F963007EB147 /* Alamofire.framework in Embed Frameworks */,
 				D47DEBAE1FE5F963007EB147 /* AlamofireSwiftyJSON.framework in Embed Frameworks */,
@@ -50,6 +52,8 @@
 		D479A24D1FE4CEAE00632DC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D479A2501FE4CEAE00632DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D479A2521FE4CEAE00632DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D47BB0CB1FEBFB9800FCD8C2 /* SDWebImage.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SDWebImage.framework.dSYM; sourceTree = "<group>"; };
+		D47BB0CC1FEBFB9C00FCD8C2 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 		D47DEBA51FE5F95E007EB147 /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
 		D47DEBA61FE5F960007EB147 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		D47DEBA71FE5F961007EB147 /* AlamofireSwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlamofireSwiftyJSON.framework; sourceTree = "<group>"; };
@@ -66,11 +70,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4D06EBC1FE88A7E007CA826 /* SDWebImage.framework in Frameworks */,
 				D4D06EBD1FE88A7E007CA826 /* SDWebImage.framework.dSYM in Frameworks */,
 				D47DEBAB1FE5F963007EB147 /* Alamofire.framework in Frameworks */,
 				D47DEBAD1FE5F963007EB147 /* AlamofireSwiftyJSON.framework in Frameworks */,
 				D4D06EBE1FE88AA4007CA826 /* SDWebImage.framework in Frameworks */,
+				D47BB0CD1FEBFB9C00FCD8C2 /* SDWebImage.framework in Frameworks */,
 				D47DEBAF1FE5F963007EB147 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +85,8 @@
 		D479A23A1FE4CEAD00632DC0 = {
 			isa = PBXGroup;
 			children = (
+				D47BB0CC1FEBFB9C00FCD8C2 /* SDWebImage.framework */,
+				D47BB0CB1FEBFB9800FCD8C2 /* SDWebImage.framework.dSYM */,
 				D47DEBA61FE5F960007EB147 /* Alamofire.framework */,
 				D47DEBAA1FE5F963007EB147 /* Alamofire.framework.dSYM */,
 				D47DEBA71FE5F961007EB147 /* AlamofireSwiftyJSON.framework */,
