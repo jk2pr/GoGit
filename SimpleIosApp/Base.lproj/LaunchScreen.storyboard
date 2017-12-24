@@ -18,17 +18,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhW-R8-6n5">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhW-R8-6n5">
                                 <rect key="frame" x="100" y="318" width="175" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.83116094559585496" green="0.48654171461089529" blue="0.39224496578052626" alpha="0.41219190140845069" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Hi this is Splash"/>
+                                <state key="normal" title="Simple iOS App">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonClick:" destination="1o1-kv-Jmd" eventType="touchUpInside" id="W32-4v-h6T"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.80929138303014503" green="0.82514977331606221" blue="0.2581013350304654" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.82514977331606221" green="0.42268619140276309" blue="0.2461729882943364" alpha="0.5950154049295775" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RhW-R8-6n5" secondAttribute="bottom" constant="319" id="TZQ-Q4-XBM"/>
+                            <constraint firstItem="RhW-R8-6n5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="298" id="Uh3-YD-gO0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RhW-R8-6n5" secondAttribute="trailing" constant="100" id="ZZV-ch-uM5"/>
+                            <constraint firstItem="RhW-R8-6n5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="rkP-V4-lUV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

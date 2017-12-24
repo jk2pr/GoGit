@@ -19,11 +19,12 @@ class GitHubUserCell: UITableViewCell {
     @IBOutlet weak var namelabel: UILabel!
     @IBOutlet weak var urlLabel: UILabel!
     
+    
 }
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
-    
+    let activityIndicator:UIActivityIndicatorView=UIActivityIndicatorView()
     private  var arrRes:[GitHubeUserData]=[]
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
         
@@ -38,6 +39,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! GitHubUserCell
+        //let cell = tableView.cellForRow(at: indexPath) as! GitHubUserCell
         let data=arrRes[indexPath.row]
         cell.urlLabel.font=UIFont.boldSystemFont(ofSize: 20.0)
         cell.urlLabel.text=data.html_url
@@ -50,8 +52,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.estimatedRowHeight=120
-        Alamofire.request("https://api.github.com/search/users?q=Kotlin").responseJSON { (responseData) -> Void in
+       
+        self.tableView.isHidden=true
+        activityIndicator.activityIndicatorViewStyle=UIActivityIndicatorViewStyle.gray
+        activityIndicator.hidesWhenStopped=true
+        activityIndicator.center=self.view.center
+        self.view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
+       // tableView.separatorStyle=UITableViewCellSeparatorStyle.singleLine
+        //tableView.separatorColor=UIColor.darkGray
+        Alamofire.request("https://api.github.com/search/users?q=Kotlin").responseJSON
+            { (responseData) -> Void in
+                guard responseData.result.isSuccess else {
+                    print("Error while fetching remote rooms: \(String(describing: responseData.result.error))")
+                    return
+                }
+
             if((responseData.result.value) != nil) {
                 let swiftyJsonVar = JSON(responseData.result.value!)
                 print(swiftyJsonVar)
@@ -79,6 +95,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 if self.arrRes.count > 0 {
                     //  print(self.arrRes)
                     self.tableView.reloadData()
+                    self.tableView.isHidden=false
+                    self.activityIndicator.stopAnimating()
                 }
             }
             // self.arrRes = items as! [String:AnyObject]
