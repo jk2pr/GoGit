@@ -103,24 +103,23 @@
                     <navigationItem key="navigationItem" title="Home" id="bHx-07-Bne"/>
                     <connections>
                         <outlet property="tableView" destination="NXA-Zf-IcL" id="qz3-gU-fwc"/>
-                        <segue destination="Lvr-om-8O4" kind="show" id="Fl3-Xz-b6A"/>
+                        <segue destination="Lvr-om-8O4" kind="show" identifier="segue" id="sQC-Ct-dtX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-154.40000000000001" y="-1057.4212893553224"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="WN9-cA-YSa">
             <objects>
-                <viewController id="Lvr-om-8O4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="webviewcontroller" id="Lvr-om-8O4" customClass="WebViewController" customModule="SimpleIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nXA-r3-BYn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FT1-mJ-vJm">
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FT1-mJ-vJm">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -129,12 +128,26 @@
                             </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FT1-mJ-vJm" firstAttribute="leading" secondItem="fdj-UY-EEu" secondAttribute="leading" id="2cZ-PK-Au4"/>
+                            <constraint firstItem="FT1-mJ-vJm" firstAttribute="trailing" secondItem="fdj-UY-EEu" secondAttribute="trailing" id="bIc-a0-kdo"/>
+                            <constraint firstItem="fdj-UY-EEu" firstAttribute="bottom" secondItem="FT1-mJ-vJm" secondAttribute="bottom" id="dsa-Fg-Qwd"/>
+                            <constraint firstItem="FT1-mJ-vJm" firstAttribute="top" secondItem="nXA-r3-BYn" secondAttribute="top" id="pJv-PJ-ozI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fdj-UY-EEu"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="FT1-mJ-vJm" id="PvZ-GV-u0j"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="" id="nk5-UT-E2m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DRQ-ap-u48" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="990" y="-842"/>
+            <point key="canvasLocation" x="602" y="-1003"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sQC-Ct-dtX"/>
+        <segue reference="nk5-UT-E2m"/>
+    </inferredMetricsTieBreakers>
 </document>

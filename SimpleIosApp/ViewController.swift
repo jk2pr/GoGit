@@ -26,6 +26,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     let activityIndicator:UIActivityIndicatorView=UIActivityIndicatorView()
     private  var arrRes:[GitHubeUserData]=[]
+    private var selectedRow:Int=0
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
         
     {
@@ -102,6 +103,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             // self.arrRes = items as! [String:AnyObject]
         }
         
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedRow=indexPath.row
+        performSegue(withIdentifier: "segue", sender: self)
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let web=segue.destination as! WebViewController
+        web.githubUser=arrRes[selectedRow]
     }
 }
 // Do any additional setup after loading the view, typically from a nib.

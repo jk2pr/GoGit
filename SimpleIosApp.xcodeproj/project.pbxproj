@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D40BAF4D1FF0E14D00586787 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BAF4C1FF0E14D00586787 /* WebViewController.swift */; };
 		D479A2471FE4CEAE00632DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */; };
 		D479A2491FE4CEAE00632DC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479A2481FE4CEAE00632DC0 /* ViewController.swift */; };
 		D479A24C1FE4CEAE00632DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D479A24A1FE4CEAE00632DC0 /* Main.storyboard */; };
 		D479A24E1FE4CEAE00632DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D479A24D1FE4CEAE00632DC0 /* Assets.xcassets */; };
 		D479A2511FE4CEAE00632DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D479A24F1FE4CEAE00632DC0 /* LaunchScreen.storyboard */; };
-		D47BB0CD1FEBFB9C00FCD8C2 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47BB0CC1FEBFB9C00FCD8C2 /* SDWebImage.framework */; };
 		D47BB0CE1FEBFB9C00FCD8C2 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D47BB0CC1FEBFB9C00FCD8C2 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D47DEBAB1FE5F963007EB147 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47DEBA61FE5F960007EB147 /* Alamofire.framework */; };
 		D47DEBAC1FE5F963007EB147 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D47DEBA61FE5F960007EB147 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -23,7 +23,6 @@
 		D47DEBB31FE6219A007EB147 /* GitHubUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DEBB21FE62199007EB147 /* GitHubUserData.swift */; };
 		D4D06EBD1FE88A7E007CA826 /* SDWebImage.framework.dSYM in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D06EBB1FE88A7E007CA826 /* SDWebImage.framework.dSYM */; };
 		D4D06EBE1FE88AA4007CA826 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D06EBA1FE88A7E007CA826 /* SDWebImage.framework */; };
-		D4D06EBF1FE88AA4007CA826 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4D06EBA1FE88A7E007CA826 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +33,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D47BB0CE1FEBFB9C00FCD8C2 /* SDWebImage.framework in Embed Frameworks */,
-				D4D06EBF1FE88AA4007CA826 /* SDWebImage.framework in Embed Frameworks */,
 				D47DEBAC1FE5F963007EB147 /* Alamofire.framework in Embed Frameworks */,
 				D47DEBAE1FE5F963007EB147 /* AlamofireSwiftyJSON.framework in Embed Frameworks */,
 				D47DEBB01FE5F963007EB147 /* SwiftyJSON.framework in Embed Frameworks */,
@@ -45,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D40BAF4C1FF0E14D00586787 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		D479A2431FE4CEAE00632DC0 /* SimpleIosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleIosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D479A2481FE4CEAE00632DC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +73,6 @@
 				D47DEBAB1FE5F963007EB147 /* Alamofire.framework in Frameworks */,
 				D47DEBAD1FE5F963007EB147 /* AlamofireSwiftyJSON.framework in Frameworks */,
 				D4D06EBE1FE88AA4007CA826 /* SDWebImage.framework in Frameworks */,
-				D47BB0CD1FEBFB9C00FCD8C2 /* SDWebImage.framework in Frameworks */,
 				D47DEBAF1FE5F963007EB147 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +108,7 @@
 		D479A2451FE4CEAE00632DC0 /* SimpleIosApp */ = {
 			isa = PBXGroup;
 			children = (
+				D40BAF4C1FF0E14D00586787 /* WebViewController.swift */,
 				D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */,
 				D479A2481FE4CEAE00632DC0 /* ViewController.swift */,
 				D479A24A1FE4CEAE00632DC0 /* Main.storyboard */,
@@ -206,6 +205,7 @@
 				D479A2491FE4CEAE00632DC0 /* ViewController.swift in Sources */,
 				D47DEBB31FE6219A007EB147 /* GitHubUserData.swift in Sources */,
 				D479A2471FE4CEAE00632DC0 /* AppDelegate.swift in Sources */,
+				D40BAF4D1FF0E14D00586787 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
