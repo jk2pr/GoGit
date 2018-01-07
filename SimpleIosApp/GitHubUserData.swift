@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class GitHubeUserData{
+struct GitHubeUserData{
     var uid: Int?;
     var login: String?;
     var avatar_url: String?;
@@ -20,7 +20,7 @@ class GitHubeUserData{
     var gists_url: String?;
     var type: String?;
     var score: Double;
-    init(uid: Int?,
+  /*  init(uid: Int?,
     login: String?,
      avatar_url: String?,
      id: Int?,
@@ -46,5 +46,5 @@ class GitHubeUserData{
         self.type=type
         self.score=score
     }
-
+*/
 }
