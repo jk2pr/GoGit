@@ -41,6 +41,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! GitHubUserCell
+
         //let cell = tableView.cellForRow(at: indexPath) as! GitHubUserCell
         let data=arrRes[indexPath.row]
         cell.urlLabel.font=UIFont.boldSystemFont(ofSize: 20.0)
