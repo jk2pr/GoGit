@@ -51,6 +51,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let url=URL(string:data.avatar_url!)
         cell.imageview.sd_setImage(with: url)
         
+        let contentView = cell.contentView
+        let margin=CGFloat(5)
+        cell.contentView.layoutMargins.bottom=margin
+       // cell.contentView.layoutMargins.top=margin
+        //cell.contentView.layoutMargins.left=margin
+        //cell.contentView.layoutMargins.right=margin
+        
+        cell.backgroundColor=UIColor.white
+        //contentView.backgroundColor=UIColor.lightGray
+        contentView.layer.cornerRadius=1
+        contentView.layer.borderColor=UIColor.lightGray.cgColor
+        contentView.layer.borderWidth=0.5
+        contentView.layer.shadowRadius=1
+        contentView.layer.shadowOpacity = 0.01
+        contentView.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: contentView.layer.cornerRadius).cgPath
+
+        
+        
         return cell
     }
     override func viewDidLoad() {
