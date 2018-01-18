@@ -35,7 +35,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
-        tableView.backgroundColor=UIColor.brown
+        tableView.backgroundColor=UIColor.clear
         return 125
     }
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -73,6 +73,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Setup searchbar
+        setUpSearchBar()
        
         self.tableView.isHidden=true
         activityIndicator.activityIndicatorViewStyle=UIActivityIndicatorViewStyle.gray
@@ -124,7 +127,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
     }
+    func setUpSearchBar(){
+        let searchController = UISearchController()
+        navigationItem.searchController=searchController
+        
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         self.selectedRow=indexPath.row
         performSegue(withIdentifier: "segue", sender: self)
         
