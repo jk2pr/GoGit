@@ -22,7 +22,7 @@ class GitHubUserCell: UITableViewCell {
     
 }
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate {
     @IBOutlet weak var tableView: UITableView!
     let activityIndicator:UIActivityIndicatorView=UIActivityIndicatorView()
     private  var arrRes:[GitHubeUserData]=[]
@@ -128,9 +128,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     func setUpSearchBar(){
-        let searchController = UISearchController()
-        navigationItem.searchController=searchController
-        
+        let searchBar:UISearchBar = UISearchBar()
+        searchBar.searchBarStyle = UISearchBarStyle.prominent
+        searchBar.placeholder = " Search..."
+        searchBar.sizeToFit()
+        searchBar.isTranslucent = false
+        searchBar.backgroundImage = UIImage()
+        searchBar.delegate = self
+        self.tableView.tableHeaderView = searchBar
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
