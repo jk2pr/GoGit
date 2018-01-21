@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7gm-Nu-bwO">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cw9-jp-b1C">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,17 +9,72 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="DAn-ws-jPl">
+            <objects>
+                <viewController id="Cw9-jp-b1C" customClass="SplashViewController" customModule="SimpleIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ag8-Zb-In2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" image="logo_foreground.png" translatesAutoresizingMaskIntoConstraints="NO" id="htC-qy-7NG">
+                                <rect key="frame" x="133.66666666666666" y="352" width="108" height="108"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fn-UZ-5Lx">
+                                <rect key="frame" x="102" y="461" width="173" height="35"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="Login with GitHub"/>
+                                <connections>
+                                    <action selector="onLoginButtonClick:" destination="Cw9-jp-b1C" eventType="touchUpInside" id="xr5-L2-kYj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mit-55-HK6">
+                                <rect key="frame" x="100" y="536" width="177" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Continue without Login"/>
+                                <connections>
+                                    <action selector="onSkip:" destination="Cw9-jp-b1C" eventType="touchUpInside" id="j0n-D8-WsS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16456431150436401" green="0.72622668743133545" blue="0.81808251142501831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Fn-UZ-5Lx" firstAttribute="top" secondItem="htC-qy-7NG" secondAttribute="bottom" constant="1" id="G6w-IS-wEz"/>
+                            <constraint firstItem="htC-qy-7NG" firstAttribute="centerY" secondItem="Ag8-Zb-In2" secondAttribute="centerY" id="QqR-Oq-pR0"/>
+                            <constraint firstItem="0Fn-UZ-5Lx" firstAttribute="centerX" secondItem="mit-55-HK6" secondAttribute="centerX" id="SxA-Fi-yKl"/>
+                            <constraint firstItem="htC-qy-7NG" firstAttribute="centerX" secondItem="Ag8-Zb-In2" secondAttribute="centerX" id="cBN-oa-1sy"/>
+                            <constraint firstItem="mit-55-HK6" firstAttribute="top" secondItem="0Fn-UZ-5Lx" secondAttribute="bottom" constant="40" id="izN-x6-DxK"/>
+                            <constraint firstItem="htC-qy-7NG" firstAttribute="centerX" secondItem="0Fn-UZ-5Lx" secondAttribute="centerX" id="mxP-vB-yYo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wRr-1r-SdG"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginWithGitHub" destination="0Fn-UZ-5Lx" id="QBD-Xn-vzJ"/>
+                        <outlet property="logo" destination="htC-qy-7NG" id="4O3-cy-NHy"/>
+                        <outlet property="skip" destination="mit-55-HK6" id="jWo-Fe-UMF"/>
+                        <segue destination="7gm-Nu-bwO" kind="show" identifier="navigateToHome" id="dJB-8s-g0o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6DR-P6-07M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1852.5" y="-1040"/>
+        </scene>
         <!--Home-->
         <scene sceneID="dnW-iX-92A">
             <objects>
                 <navigationController title="Home" toolbarHidden="NO" id="7gm-Nu-bwO" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0kn-z3-FcH">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jDY-RL-jl3">
-                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="729" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
@@ -35,11 +90,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NXA-Zf-IcL">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="q4Q-4F-KXi" customClass="GitHubUserCell" customModule="SimpleIosApp" customModuleProvider="target">
@@ -50,7 +105,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="djj-ZC-urL">
-                                                    <rect key="frame" x="8" y="26.5" width="90" height="90"/>
+                                                    <rect key="frame" x="8" y="-54" width="90" height="90"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="90" id="48F-f7-eoe"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="E7X-pK-LxS"/>
@@ -58,13 +113,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9e-9q-8xP">
-                                                    <rect key="frame" x="106" y="72" width="268" height="45"/>
+                                                    <rect key="frame" x="106" y="-8.6666666666666661" width="268" height="45.333333333333336"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yt-1W-ok4">
-                                                    <rect key="frame" x="106" y="26.5" width="268" height="45"/>
+                                                    <rect key="frame" x="106" y="-54" width="268" height="45"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -122,11 +177,11 @@
             <objects>
                 <viewController storyboardIdentifier="webviewcontroller" id="Lvr-om-8O4" customClass="WebViewController" customModule="SimpleIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nXA-r3-BYn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FT1-mJ-vJm">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -153,8 +208,10 @@
             <point key="canvasLocation" x="602" y="-1003"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo_foreground.png" width="108" height="108"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sQC-Ct-dtX"/>
         <segue reference="nk5-UT-E2m"/>
     </inferredMetricsTieBreakers>
 </document>
