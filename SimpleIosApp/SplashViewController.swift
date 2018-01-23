@@ -39,8 +39,18 @@ class SplashViewController: UIViewController{
             
         }, completion:{
              (value: Bool) in
-//             let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: UIAlertControllerStyle.alert)
-//                alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+            
+            let alertViewController = self.storyboard?.instantiateViewController(withIdentifier: "webalertviewcontroller") as!  WebAlertViewController
+            
+            self.present(alertViewController, animated: true, completion: nil)
+
+            
+//            let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: UIAlertControllerStyle.alert)
+//            //  alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+//            let wkWebView=WKWebView()
+//            let urlReq = URLRequest(url: URL(string: "https://www.google.co.in")!)
+//            wkWebView.load(urlReq)
+//            alert.view.addSubview(wkWebView)
 //            self.present(alert, animated: true, completion: nil)
 //
             

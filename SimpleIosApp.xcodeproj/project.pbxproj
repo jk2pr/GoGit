@@ -25,6 +25,7 @@
 		D4D06EBD1FE88A7E007CA826 /* SDWebImage.framework.dSYM in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D06EBB1FE88A7E007CA826 /* SDWebImage.framework.dSYM */; };
 		D4D06EBE1FE88AA4007CA826 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D06EBA1FE88A7E007CA826 /* SDWebImage.framework */; };
 		D4D7A0D7201446F000AC95A9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D7A0D6201446F000AC95A9 /* SplashViewController.swift */; };
+		D4FE07C32016AB2A00719F9D /* WebAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FE07C22016AB2A00719F9D /* WebAlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,6 +67,7 @@
 		D4D06EBA1FE88A7E007CA826 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 		D4D06EBB1FE88A7E007CA826 /* SDWebImage.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SDWebImage.framework.dSYM; sourceTree = "<group>"; };
 		D4D7A0D6201446F000AC95A9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		D4FE07C22016AB2A00719F9D /* WebAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				D479A24F1FE4CEAE00632DC0 /* LaunchScreen.storyboard */,
 				D479A2521FE4CEAE00632DC0 /* Info.plist */,
 				D47DEBB21FE62199007EB147 /* GitHubUserData.swift */,
+				D4FE07C22016AB2A00719F9D /* WebAlertViewController.swift */,
 			);
 			path = SimpleIosApp;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4FE07C32016AB2A00719F9D /* WebAlertViewController.swift in Sources */,
 				D479A2491FE4CEAE00632DC0 /* ViewController.swift in Sources */,
 				D47DEBB31FE6219A007EB147 /* GitHubUserData.swift in Sources */,
 				D479A2471FE4CEAE00632DC0 /* AppDelegate.swift in Sources */,
