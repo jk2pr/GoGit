@@ -10,12 +10,22 @@ import Foundation
 import UIKit
 import WebKit
 
-class WebAlertViewController: ViewController{
+class WebAlertViewController: ViewController,WKUIDelegate{
     
     @IBOutlet weak var webview: WKWebView!
+    private let REDIRECT_URL_CALLBACK = "https://daggerrxkotlin.firebaseapp.com/__/auth/handler"
     override func viewDidLoad() {
         self.view.backgroundColor = UIColor(white: 0.5, alpha: 0.4)
+        webview.uiDelegate=self
+       
         
+    }
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        
+        if request.url?.absoluteString == "https://www.google.com" {
+            return false
+        }
+        return true
     }
     override func viewDidAppear(_ animated: Bool) {
         let urlReq = URLRequest(url: URL(string: "http://www.google.co.in")!)
