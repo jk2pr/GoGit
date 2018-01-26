@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D40682FD2018A84000ED558A /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40682FB2018A84000ED558A /* FirebaseAuth.framework */; };
+		D40682FE2018A84000ED558A /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40682FC2018A84000ED558A /* GTMSessionFetcher.framework */; };
+		D40683022018A9E100ED558A /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40683012018A9E100ED558A /* FirebaseCore.framework */; };
+		D40683042018B1A800ED558A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D40683032018B1A800ED558A /* GoogleService-Info.plist */; };
 		D40BAF4D1FF0E14D00586787 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BAF4C1FF0E14D00586787 /* WebViewController.swift */; };
 		D479A2471FE4CEAE00632DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */; };
 		D479A2491FE4CEAE00632DC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479A2481FE4CEAE00632DC0 /* ViewController.swift */; };
@@ -22,8 +26,13 @@
 		D47DEBB01FE5F963007EB147 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D47DEBA91FE5F962007EB147 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D47DEBB31FE6219A007EB147 /* GitHubUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DEBB21FE62199007EB147 /* GitHubUserData.swift */; };
 		D488FB162014C06B005D7F14 /* logo_foreground.png in Resources */ = {isa = PBXBuildFile; fileRef = D488FB152014C06B005D7F14 /* logo_foreground.png */; };
+		D4CA7EC7201ABE2A000ABABB /* Firebase.h in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CA7EC6201ABE2A000ABABB /* Firebase.h */; };
 		D4D06EBD1FE88A7E007CA826 /* SDWebImage.framework.dSYM in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D06EBB1FE88A7E007CA826 /* SDWebImage.framework.dSYM */; };
 		D4D06EBE1FE88AA4007CA826 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D06EBA1FE88A7E007CA826 /* SDWebImage.framework */; };
+		D4D2C3C020185C3800AA6B9A /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D2C3BE20185C3700AA6B9A /* Realm.framework */; };
+		D4D2C3C120185C3800AA6B9A /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4D2C3BE20185C3700AA6B9A /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D4D2C3C220185C3800AA6B9A /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D2C3BF20185C3800AA6B9A /* RealmSwift.framework */; };
+		D4D2C3C320185C3800AA6B9A /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4D2C3BF20185C3800AA6B9A /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D4D7A0D7201446F000AC95A9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D7A0D6201446F000AC95A9 /* SplashViewController.swift */; };
 		D4FE07C32016AB2A00719F9D /* WebAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FE07C22016AB2A00719F9D /* WebAlertViewController.swift */; };
 /* End PBXBuildFile section */
@@ -37,8 +46,10 @@
 			files = (
 				D47BB0CE1FEBFB9C00FCD8C2 /* SDWebImage.framework in Embed Frameworks */,
 				D47DEBAC1FE5F963007EB147 /* Alamofire.framework in Embed Frameworks */,
+				D4D2C3C320185C3800AA6B9A /* RealmSwift.framework in Embed Frameworks */,
 				D47DEBAE1FE5F963007EB147 /* AlamofireSwiftyJSON.framework in Embed Frameworks */,
 				D47DEBB01FE5F963007EB147 /* SwiftyJSON.framework in Embed Frameworks */,
+				D4D2C3C120185C3800AA6B9A /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +57,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D40682FB2018A84000ED558A /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = "../../Downloads/Firebase 2/Auth/FirebaseAuth.framework"; sourceTree = "<group>"; };
+		D40682FC2018A84000ED558A /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = "../../Downloads/Firebase 2/Auth/GTMSessionFetcher.framework"; sourceTree = "<group>"; };
+		D40682FF2018A85000ED558A /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = "../../Downloads/Firebase 2/Auth/FirebaseAuth.framework"; sourceTree = "<group>"; };
+		D40683002018A85000ED558A /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = "../../Downloads/Firebase 2/Auth/GTMSessionFetcher.framework"; sourceTree = "<group>"; };
+		D40683012018A9E100ED558A /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
+		D40683032018B1A800ED558A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D40BAF4C1FF0E14D00586787 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		D479A2431FE4CEAE00632DC0 /* SimpleIosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleIosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,8 +81,12 @@
 		D47DEBAA1FE5F963007EB147 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Alamofire.framework.dSYM; sourceTree = "<group>"; };
 		D47DEBB21FE62199007EB147 /* GitHubUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserData.swift; sourceTree = "<group>"; };
 		D488FB152014C06B005D7F14 /* logo_foreground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_foreground.png; sourceTree = "<group>"; };
+		D4CA7EC6201ABE2A000ABABB /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		D4CA7EC8201ABE44000ABABB /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
 		D4D06EBA1FE88A7E007CA826 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 		D4D06EBB1FE88A7E007CA826 /* SDWebImage.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SDWebImage.framework.dSYM; sourceTree = "<group>"; };
+		D4D2C3BE20185C3700AA6B9A /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		D4D2C3BF20185C3800AA6B9A /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		D4D7A0D6201446F000AC95A9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		D4FE07C22016AB2A00719F9D /* WebAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,9 +96,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CA7EC7201ABE2A000ABABB /* Firebase.h in Frameworks */,
+				D4D2C3C020185C3800AA6B9A /* Realm.framework in Frameworks */,
+				D40682FE2018A84000ED558A /* GTMSessionFetcher.framework in Frameworks */,
 				D4D06EBD1FE88A7E007CA826 /* SDWebImage.framework.dSYM in Frameworks */,
+				D4D2C3C220185C3800AA6B9A /* RealmSwift.framework in Frameworks */,
 				D47DEBAB1FE5F963007EB147 /* Alamofire.framework in Frameworks */,
 				D47DEBAD1FE5F963007EB147 /* AlamofireSwiftyJSON.framework in Frameworks */,
+				D40683022018A9E100ED558A /* FirebaseCore.framework in Frameworks */,
+				D40682FD2018A84000ED558A /* FirebaseAuth.framework in Frameworks */,
 				D4D06EBE1FE88AA4007CA826 /* SDWebImage.framework in Frameworks */,
 				D47DEBAF1FE5F963007EB147 /* SwiftyJSON.framework in Frameworks */,
 			);
@@ -89,6 +116,11 @@
 		D479A23A1FE4CEAD00632DC0 = {
 			isa = PBXGroup;
 			children = (
+				D4CA7EC8201ABE44000ABABB /* Firebase.h */,
+				D40682FB2018A84000ED558A /* FirebaseAuth.framework */,
+				D40682FC2018A84000ED558A /* GTMSessionFetcher.framework */,
+				D4D2C3BE20185C3700AA6B9A /* Realm.framework */,
+				D4D2C3BF20185C3800AA6B9A /* RealmSwift.framework */,
 				D47BB0CC1FEBFB9C00FCD8C2 /* SDWebImage.framework */,
 				D47BB0CB1FEBFB9800FCD8C2 /* SDWebImage.framework.dSYM */,
 				D47DEBA61FE5F960007EB147 /* Alamofire.framework */,
@@ -124,6 +156,7 @@
 				D479A24F1FE4CEAE00632DC0 /* LaunchScreen.storyboard */,
 				D479A2521FE4CEAE00632DC0 /* Info.plist */,
 				D47DEBB21FE62199007EB147 /* GitHubUserData.swift */,
+				D40683032018B1A800ED558A /* GoogleService-Info.plist */,
 				D4FE07C22016AB2A00719F9D /* WebAlertViewController.swift */,
 			);
 			path = SimpleIosApp;
@@ -132,6 +165,10 @@
 		D4D06EB91FE88A7D007CA826 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D4CA7EC6201ABE2A000ABABB /* Firebase.h */,
+				D40683012018A9E100ED558A /* FirebaseCore.framework */,
+				D40682FF2018A85000ED558A /* FirebaseAuth.framework */,
+				D40683002018A85000ED558A /* GTMSessionFetcher.framework */,
 				D4D06EBA1FE88A7E007CA826 /* SDWebImage.framework */,
 				D4D06EBB1FE88A7E007CA826 /* SDWebImage.framework.dSYM */,
 			);
@@ -200,6 +237,7 @@
 			files = (
 				D479A2511FE4CEAE00632DC0 /* LaunchScreen.storyboard in Resources */,
 				D488FB162014C06B005D7F14 /* logo_foreground.png in Resources */,
+				D40683042018B1A800ED558A /* GoogleService-Info.plist in Resources */,
 				D479A24E1FE4CEAE00632DC0 /* Assets.xcassets in Resources */,
 				D479A24C1FE4CEAE00632DC0 /* Main.storyboard in Resources */,
 			);
@@ -353,18 +391,24 @@
 		D479A2561FE4CEAE00632DC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SimpleIosApp/lib",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Auth",
 				);
 				INFOPLIST_FILE = SimpleIosApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jk.SimpleIosApp;
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LIBTOOLFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jk.gogit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -373,18 +417,24 @@
 		D479A2571FE4CEAE00632DC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SimpleIosApp/lib",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Auth",
 				);
 				INFOPLIST_FILE = SimpleIosApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jk.SimpleIosApp;
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LIBTOOLFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jk.gogit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
