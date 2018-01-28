@@ -16,8 +16,8 @@ import SwiftyJSON
 class WebAlertViewController: ViewController, WKNavigationDelegate{
     
     @IBOutlet weak var webview: WKWebView!
-     let clientId=""
-     let secretId=""
+     let clientId="5db96facac0277a35f64"
+     let secretId="b62824aa8700b99feb0e576d97130d801b47fe1c"
      let githubLoginUrl="https://github.com/login/oauth/authorize"
     
     
@@ -86,14 +86,14 @@ class WebAlertViewController: ViewController, WKNavigationDelegate{
                 return
             } else{
                 print("User Signed In sucessfully")
-                
+
             }
             self.dismiss(animated: true, completion: nil)
             // User is signed in
             // ...
         }
     }
-      
+
     
     
     override func viewDidAppear(_ animated: Bool) {
