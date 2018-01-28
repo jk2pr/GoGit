@@ -1,0 +1,6 @@
+framework module Pods_GoGit {
+  umbrella header "Pods-GoGit-umbrella.h"
+
+  export *
+  module * { export * }
+}

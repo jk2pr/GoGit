@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		246ABF586A0E781E86D92D26 /* Pods_SimpleIosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69761EEB178740752B92D349 /* Pods_SimpleIosApp.framework */; };
 		D40683042018B1A800ED558A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D40683032018B1A800ED558A /* GoogleService-Info.plist */; };
 		D40BAF4D1FF0E14D00586787 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BAF4C1FF0E14D00586787 /* WebViewController.swift */; };
 		D479A2471FE4CEAE00632DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */; };
@@ -19,6 +18,7 @@
 		D488FB162014C06B005D7F14 /* logo_foreground.png in Resources */ = {isa = PBXBuildFile; fileRef = D488FB152014C06B005D7F14 /* logo_foreground.png */; };
 		D4D7A0D7201446F000AC95A9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D7A0D6201446F000AC95A9 /* SplashViewController.swift */; };
 		D4FE07C32016AB2A00719F9D /* WebAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FE07C22016AB2A00719F9D /* WebAlertViewController.swift */; };
+		D82155A69BFF70F8CD4745CD /* Pods_GoGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E0EB154CEBD934A80093E6 /* Pods_GoGit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,9 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		051065B1FC825C8E4236D19B /* Pods-SimpleIosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleIosApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleIosApp/Pods-SimpleIosApp.release.xcconfig"; sourceTree = "<group>"; };
-		69761EEB178740752B92D349 /* Pods_SimpleIosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleIosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		83BEEACAFF18AADDCB9977BC /* Pods-SimpleIosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleIosApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleIosApp/Pods-SimpleIosApp.debug.xcconfig"; sourceTree = "<group>"; };
+		74E0EB154CEBD934A80093E6 /* Pods_GoGit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoGit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CAFA0A128AC1C955C886CFE /* Pods-GoGit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoGit.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoGit/Pods-GoGit.release.xcconfig"; sourceTree = "<group>"; };
 		D40683032018B1A800ED558A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D40BAF4C1FF0E14D00586787 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		D479A2431FE4CEAE00632DC0 /* GoGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +50,7 @@
 		D488FB152014C06B005D7F14 /* logo_foreground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_foreground.png; sourceTree = "<group>"; };
 		D4D7A0D6201446F000AC95A9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		D4FE07C22016AB2A00719F9D /* WebAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAlertViewController.swift; sourceTree = "<group>"; };
+		EA29DA78C4EE5D2992307E3E /* Pods-GoGit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoGit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoGit/Pods-GoGit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				246ABF586A0E781E86D92D26 /* Pods_SimpleIosApp.framework in Frameworks */,
+				D82155A69BFF70F8CD4745CD /* Pods_GoGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,8 +68,8 @@
 		075E642CD1D3E24A1ECE9E37 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				83BEEACAFF18AADDCB9977BC /* Pods-SimpleIosApp.debug.xcconfig */,
-				051065B1FC825C8E4236D19B /* Pods-SimpleIosApp.release.xcconfig */,
+				EA29DA78C4EE5D2992307E3E /* Pods-GoGit.debug.xcconfig */,
+				9CAFA0A128AC1C955C886CFE /* Pods-GoGit.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -114,7 +114,7 @@
 		D4D06EB91FE88A7D007CA826 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				69761EEB178740752B92D349 /* Pods_SimpleIosApp.framework */,
+				74E0EB154CEBD934A80093E6 /* Pods_GoGit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SimpleIosApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-GoGit-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -223,7 +223,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleIosApp/Pods-SimpleIosApp-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoGit/Pods-GoGit-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6D6F851A16359302001EE661 /* [CP] Embed Pods Frameworks */ = {
@@ -232,7 +232,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SimpleIosApp/Pods-SimpleIosApp-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoGit/Pods-GoGit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireSwiftyJSON/AlamofireSwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
@@ -253,7 +253,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleIosApp/Pods-SimpleIosApp-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoGit/Pods-GoGit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -403,7 +403,7 @@
 		};
 		D479A2561FE4CEAE00632DC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83BEEACAFF18AADDCB9977BC /* Pods-SimpleIosApp.debug.xcconfig */;
+			baseConfigurationReference = EA29DA78C4EE5D2992307E3E /* Pods-GoGit.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -416,7 +416,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Auth",
 				);
-				INFOPLIST_FILE = SimpleIosApp/Info.plist;
+				INFOPLIST_FILE = GoGit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -470,7 +470,7 @@
 		};
 		D479A2571FE4CEAE00632DC0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 051065B1FC825C8E4236D19B /* Pods-SimpleIosApp.release.xcconfig */;
+			baseConfigurationReference = 9CAFA0A128AC1C955C886CFE /* Pods-GoGit.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -483,7 +483,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Auth",
 				);
-				INFOPLIST_FILE = SimpleIosApp/Info.plist;
+				INFOPLIST_FILE = GoGit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
