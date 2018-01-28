@@ -77,7 +77,7 @@
 		D479A23A1FE4CEAD00632DC0 = {
 			isa = PBXGroup;
 			children = (
-				D479A2451FE4CEAE00632DC0 /* SimpleIosApp */,
+				D479A2451FE4CEAE00632DC0 /* GoGit */,
 				D479A2441FE4CEAE00632DC0 /* Products */,
 				D4D06EB91FE88A7D007CA826 /* Frameworks */,
 				075E642CD1D3E24A1ECE9E37 /* Pods */,
@@ -92,7 +92,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D479A2451FE4CEAE00632DC0 /* SimpleIosApp */ = {
+		D479A2451FE4CEAE00632DC0 /* GoGit */ = {
 			isa = PBXGroup;
 			children = (
 				D488FB152014C06B005D7F14 /* logo_foreground.png */,
@@ -108,7 +108,7 @@
 				D40683032018B1A800ED558A /* GoogleService-Info.plist */,
 				D4FE07C22016AB2A00719F9D /* WebAlertViewController.swift */,
 			);
-			path = SimpleIosApp;
+			path = GoGit;
 			sourceTree = "<group>";
 		};
 		D4D06EB91FE88A7D007CA826 /* Frameworks */ = {
