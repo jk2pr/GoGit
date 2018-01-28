@@ -40,7 +40,7 @@
 		83BEEACAFF18AADDCB9977BC /* Pods-SimpleIosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleIosApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleIosApp/Pods-SimpleIosApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D40683032018B1A800ED558A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D40BAF4C1FF0E14D00586787 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		D479A2431FE4CEAE00632DC0 /* SimpleIosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleIosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D479A2431FE4CEAE00632DC0 /* GoGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D479A2481FE4CEAE00632DC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D479A24B1FE4CEAE00632DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		D479A2441FE4CEAE00632DC0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D479A2431FE4CEAE00632DC0 /* SimpleIosApp.app */,
+				D479A2431FE4CEAE00632DC0 /* GoGit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,9 +122,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D479A2421FE4CEAD00632DC0 /* SimpleIosApp */ = {
+		D479A2421FE4CEAD00632DC0 /* GoGit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D479A2551FE4CEAE00632DC0 /* Build configuration list for PBXNativeTarget "SimpleIosApp" */;
+			buildConfigurationList = D479A2551FE4CEAE00632DC0 /* Build configuration list for PBXNativeTarget "GoGit" */;
 			buildPhases = (
 				27DF57392A22D3F9B325A98B /* [CP] Check Pods Manifest.lock */,
 				D479A23F1FE4CEAD00632DC0 /* Sources */,
@@ -138,9 +138,9 @@
 			);
 			dependencies = (
 			);
-			name = SimpleIosApp;
+			name = GoGit;
 			productName = SimpleIosApp;
-			productReference = D479A2431FE4CEAE00632DC0 /* SimpleIosApp.app */;
+			productReference = D479A2431FE4CEAE00632DC0 /* GoGit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -159,7 +159,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D479A23E1FE4CEAD00632DC0 /* Build configuration list for PBXProject "SimpleIosApp" */;
+			buildConfigurationList = D479A23E1FE4CEAD00632DC0 /* Build configuration list for PBXProject "GoGit" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -172,7 +172,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D479A2421FE4CEAD00632DC0 /* SimpleIosApp */,
+				D479A2421FE4CEAD00632DC0 /* GoGit */,
 			);
 		};
 /* End PBXProject section */
@@ -538,7 +538,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D479A23E1FE4CEAD00632DC0 /* Build configuration list for PBXProject "SimpleIosApp" */ = {
+		D479A23E1FE4CEAD00632DC0 /* Build configuration list for PBXProject "GoGit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D479A2531FE4CEAE00632DC0 /* Debug */,
@@ -547,7 +547,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D479A2551FE4CEAE00632DC0 /* Build configuration list for PBXNativeTarget "SimpleIosApp" */ = {
+		D479A2551FE4CEAE00632DC0 /* Build configuration list for PBXNativeTarget "GoGit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D479A2561FE4CEAE00632DC0 /* Debug */,
