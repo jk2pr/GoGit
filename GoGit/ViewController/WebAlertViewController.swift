@@ -1,6 +1,6 @@
 //
 //  WebAlertViewController.swift
-//  SimpleIosApp
+//  GoGit
 //
 //  Created by Jitendra on 23/01/18.
 //  Copyright © 2018 Jitendra. All rights reserved.
@@ -16,21 +16,13 @@ import SwiftyJSON
 class WebAlertViewController: ViewController, WKNavigationDelegate{
     
     @IBOutlet weak var webview: WKWebView!
-     let clientId="5db96facac0277a35f64"
-     let secretId="b62824aa8700b99feb0e576d97130d801b47fe1c"
-     let githubLoginUrl="https://github.com/login/oauth/authorize"
-    
-    
-    private let REDIRECT_URL_CALLBACK = "https://gogit-5a346.firebaseapp.com/__/auth/handler"
     override func viewDidLoad() {
         self.view.backgroundColor = UIColor(white: 0.5, alpha: 0.4)
         webview.navigationDelegate = self
-       
-        
     }
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!){
        // print(webView.url ?? "google.co.in")
-        if(webView.url?.absoluteString.starts(with:REDIRECT_URL_CALLBACK))!{
+        if(webView.url?.absoluteString.starts(with:Constants.REDIRECT_URL_CALLBACK))!{
             let code = getQueryStringParameter(url: (webView.url?.absoluteString)!, param: "code")
             print("Coode  " + code!)
             getAccessToken(code: code!)
@@ -43,17 +35,17 @@ class WebAlertViewController: ViewController, WKNavigationDelegate{
     }
     
     func getAccessToken(code: String){
-       let accessTokenUrl = "https://github.com/login/oauth/access_token"
+       //let accessTokenUrl = "https://github.com/login/oauth/access_token"
        
-        let params = ["client_id": clientId,
-                      "client_secret": secretId,
-                      "redirect_uri": REDIRECT_URL_CALLBACK,
+        let params = ["client_id": Constants.clientId,
+                      "client_secret": Constants.secretId,
+                      "redirect_uri": Constants.REDIRECT_URL_CALLBACK,
                       "state": "123",
                       "code": code]
         let headers=["Accept": "application/json"]
       
         
-        Alamofire.request(accessTokenUrl,
+        Alamofire.request(Constants.accessTokenUrl,
                           method: .post,
                           parameters: params,
                           encoding: JSONEncoding.default,
@@ -98,17 +90,13 @@ class WebAlertViewController: ViewController, WKNavigationDelegate{
     
     override func viewDidAppear(_ animated: Bool) {
         
-        let u = self.githubLoginUrl + "?scope=user:email user:follow public_repo &client_id=" as String
-        let v = clientId + "&secretId=" as String
+        let u = Constants.githubLoginUrl + "?scope=user:email user:follow public_repo &client_id=" as String
+        let v = Constants.clientId + "&secretId=" as String
         let completeUrl = u +
-            v+secretId + "&state=" + "123"
+            v+Constants.secretId + "&state=" + "123"
         
         
-       // print(completeUrl)
-        //completeUrl.stringByAddingPercentEncodingWithAllowedCharacters()
-        //let csCopy = CharacterSet(bitmapRepresentation:
-          //  CharacterSet.urlPathAllowed.bitmapRepresentation)
-        let urlReq = URLRequest(url: URL(string: completeUrl.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!)!)
+       let urlReq = URLRequest(url: URL(string: completeUrl.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!)!)
       //  print(urlReq.url as Any)
         webview.load(urlReq)
        

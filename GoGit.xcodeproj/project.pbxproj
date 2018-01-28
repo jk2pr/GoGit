@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		D40683042018B1A800ED558A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D40683032018B1A800ED558A /* GoogleService-Info.plist */; };
 		D40BAF4D1FF0E14D00586787 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BAF4C1FF0E14D00586787 /* WebViewController.swift */; };
+		D459DB51201D7A45000D63F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D459DB50201D7A44000D63F9 /* Constants.swift */; };
 		D479A2471FE4CEAE00632DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */; };
 		D479A2491FE4CEAE00632DC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479A2481FE4CEAE00632DC0 /* ViewController.swift */; };
 		D479A24C1FE4CEAE00632DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D479A24A1FE4CEAE00632DC0 /* Main.storyboard */; };
 		D479A24E1FE4CEAE00632DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D479A24D1FE4CEAE00632DC0 /* Assets.xcassets */; };
 		D479A2511FE4CEAE00632DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D479A24F1FE4CEAE00632DC0 /* LaunchScreen.storyboard */; };
-		D47DEBB31FE6219A007EB147 /* GitHubUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DEBB21FE62199007EB147 /* GitHubUserData.swift */; };
 		D488FB162014C06B005D7F14 /* logo_foreground.png in Resources */ = {isa = PBXBuildFile; fileRef = D488FB152014C06B005D7F14 /* logo_foreground.png */; };
+		D4C1C1EE201DE10800A5BCFC /* GitHubUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1C1ED201DE10800A5BCFC /* GitHubUserData.swift */; };
 		D4D7A0D7201446F000AC95A9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D7A0D6201446F000AC95A9 /* SplashViewController.swift */; };
 		D4FE07C32016AB2A00719F9D /* WebAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FE07C22016AB2A00719F9D /* WebAlertViewController.swift */; };
 		D82155A69BFF70F8CD4745CD /* Pods_GoGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E0EB154CEBD934A80093E6 /* Pods_GoGit.framework */; };
@@ -39,6 +40,7 @@
 		9CAFA0A128AC1C955C886CFE /* Pods-GoGit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoGit.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoGit/Pods-GoGit.release.xcconfig"; sourceTree = "<group>"; };
 		D40683032018B1A800ED558A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D40BAF4C1FF0E14D00586787 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		D459DB50201D7A44000D63F9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D479A2431FE4CEAE00632DC0 /* GoGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D479A2481FE4CEAE00632DC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,8 +48,8 @@
 		D479A24D1FE4CEAE00632DC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D479A2501FE4CEAE00632DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D479A2521FE4CEAE00632DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D47DEBB21FE62199007EB147 /* GitHubUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserData.swift; sourceTree = "<group>"; };
 		D488FB152014C06B005D7F14 /* logo_foreground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_foreground.png; sourceTree = "<group>"; };
+		D4C1C1ED201DE10800A5BCFC /* GitHubUserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GitHubUserData.swift; path = GoGit/Model/GitHubUserData.swift; sourceTree = SOURCE_ROOT; };
 		D4D7A0D6201446F000AC95A9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		D4FE07C22016AB2A00719F9D /* WebAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAlertViewController.swift; sourceTree = "<group>"; };
 		EA29DA78C4EE5D2992307E3E /* Pods-GoGit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoGit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoGit/Pods-GoGit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +76,39 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D459DB4C201D7949000D63F9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D4D7A0D6201446F000AC95A9 /* SplashViewController.swift */,
+				D479A2481FE4CEAE00632DC0 /* ViewController.swift */,
+				D4FE07C22016AB2A00719F9D /* WebAlertViewController.swift */,
+				D40BAF4C1FF0E14D00586787 /* WebViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D459DB4D201D7990000D63F9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D459DB4E201D79CA000D63F9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D459DB4F201D7A0E000D63F9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D459DB50201D7A44000D63F9 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		D479A23A1FE4CEAD00632DC0 = {
 			isa = PBXGroup;
 			children = (
@@ -95,20 +130,29 @@
 		D479A2451FE4CEAE00632DC0 /* GoGit */ = {
 			isa = PBXGroup;
 			children = (
+				D4C1C1EC201DE0EB00A5BCFC /* Model */,
+				D459DB4F201D7A0E000D63F9 /* Utils */,
+				D459DB4E201D79CA000D63F9 /* Login */,
+				D459DB4D201D7990000D63F9 /* Profile */,
+				D459DB4C201D7949000D63F9 /* ViewController */,
 				D488FB152014C06B005D7F14 /* logo_foreground.png */,
-				D40BAF4C1FF0E14D00586787 /* WebViewController.swift */,
 				D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */,
-				D479A2481FE4CEAE00632DC0 /* ViewController.swift */,
 				D479A24A1FE4CEAE00632DC0 /* Main.storyboard */,
-				D4D7A0D6201446F000AC95A9 /* SplashViewController.swift */,
 				D479A24D1FE4CEAE00632DC0 /* Assets.xcassets */,
 				D479A24F1FE4CEAE00632DC0 /* LaunchScreen.storyboard */,
 				D479A2521FE4CEAE00632DC0 /* Info.plist */,
-				D47DEBB21FE62199007EB147 /* GitHubUserData.swift */,
 				D40683032018B1A800ED558A /* GoogleService-Info.plist */,
-				D4FE07C22016AB2A00719F9D /* WebAlertViewController.swift */,
 			);
 			path = GoGit;
+			sourceTree = "<group>";
+		};
+		D4C1C1EC201DE0EB00A5BCFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D4C1C1ED201DE10800A5BCFC /* GitHubUserData.swift */,
+			);
+			name = Model;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		D4D06EB91FE88A7D007CA826 /* Frameworks */ = {
@@ -265,8 +309,9 @@
 			files = (
 				D4FE07C32016AB2A00719F9D /* WebAlertViewController.swift in Sources */,
 				D479A2491FE4CEAE00632DC0 /* ViewController.swift in Sources */,
-				D47DEBB31FE6219A007EB147 /* GitHubUserData.swift in Sources */,
+				D4C1C1EE201DE10800A5BCFC /* GitHubUserData.swift in Sources */,
 				D479A2471FE4CEAE00632DC0 /* AppDelegate.swift in Sources */,
+				D459DB51201D7A45000D63F9 /* Constants.swift in Sources */,
 				D40BAF4D1FF0E14D00586787 /* WebViewController.swift in Sources */,
 				D4D7A0D7201446F000AC95A9 /* SplashViewController.swift in Sources */,
 			);

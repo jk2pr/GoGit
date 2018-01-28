@@ -1,6 +1,6 @@
 //
 //  SplashViewController.swift
-//  SimpleIosApp
+//  GoGit
 //
 //  Created by Jitendra on 21/01/18.
 //  Copyright © 2018 Jitendra. All rights reserved.

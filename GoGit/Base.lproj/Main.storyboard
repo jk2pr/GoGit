@@ -18,7 +18,7 @@
         <!--Splash View Controller-->
         <scene sceneID="DAn-ws-jPl">
             <objects>
-                <viewController id="Cw9-jp-b1C" customClass="SplashViewController" customModule="SimpleIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Cw9-jp-b1C" customClass="SplashViewController" customModule="GoGit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ag8-Zb-In2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,7 +69,7 @@
         <!--Web Alert View Controller-->
         <scene sceneID="hkb-hD-qu2">
             <objects>
-                <viewController storyboardIdentifier="webalertviewcontroller" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="Taa-WJ-zVl" customClass="WebAlertViewController" customModule="SimpleIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="webalertviewcontroller" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="Taa-WJ-zVl" customClass="WebAlertViewController" customModule="GoGit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="net-bj-Ceh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,7 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoGit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +132,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="q4Q-4F-KXi" customClass="GitHubUserCell" customModule="SimpleIosApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="q4Q-4F-KXi" customClass="GitHubUserCell" customModule="GoGit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q4Q-4F-KXi" id="sDb-6r-bdN">
@@ -210,7 +210,7 @@
         <!--Web View Controller-->
         <scene sceneID="WN9-cA-YSa">
             <objects>
-                <viewController storyboardIdentifier="webviewcontroller" id="Lvr-om-8O4" customClass="WebViewController" customModule="SimpleIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="webviewcontroller" id="Lvr-om-8O4" customClass="WebViewController" customModule="GoGit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nXA-r3-BYn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

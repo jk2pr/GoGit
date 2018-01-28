@@ -1,6 +1,6 @@
 //
 //  GitHubUserData.swift
-//  SimpleIosApp
+//  GoGit
 //
 //  Created by Jitendra on 17/12/2017.
 //  Copyright © 2017 Jitendra. All rights reserved.

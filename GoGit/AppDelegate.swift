@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SimpleIosApp
+//  GoGit
 //
 //  Created by Jitendra on 16/12/2017.
 //  Copyright © 2017 Jitendra. All rights reserved.

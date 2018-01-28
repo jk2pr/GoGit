@@ -1,6 +1,6 @@
 //
 //  WebViewController.swift
-//  SimpleIosApp
+//  GoGit
 //
 //  Created by Jitendra on 25/12/17.
 //  Copyright © 2017 Jitendra. All rights reserved.
