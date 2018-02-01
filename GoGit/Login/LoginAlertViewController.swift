@@ -9,22 +9,28 @@
 import Foundation
 import UIKit
 import WebKit
-import FirebaseAuth
+import Firebase
 import Alamofire
 import SwiftyJSON
 
-class WebAlertViewController: ViewController, WKNavigationDelegate{
+class LoginAlertViewController: ViewController, WKNavigationDelegate{
+
+    var auth: Auth!
     
     @IBOutlet weak var webview: WKWebView!
     override func viewDidLoad() {
         self.view.backgroundColor = UIColor(white: 0.5, alpha: 0.4)
         webview.navigationDelegate = self
+        auth = Auth.auth()
+        
+        
+        
     }
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!){
        // print(webView.url ?? "google.co.in")
         if(webView.url?.absoluteString.starts(with:Constants.REDIRECT_URL_CALLBACK))!{
             let code = getQueryStringParameter(url: (webView.url?.absoluteString)!, param: "code")
-            print("Coode  " + code!)
+            print("Code  " + code!)
             getAccessToken(code: code!)
             
         }
@@ -69,24 +75,31 @@ class WebAlertViewController: ViewController, WKNavigationDelegate{
         }
       
         
+        
+    }
+    private func redirectToHome()
+    {
+        self.performSegue(withIdentifier: "navigateToUserProfile", sender: self)
     }
     func signInWithFireBase(credential:AuthCredential){
-        Auth.auth().signIn(with: credential) {
+        auth.signIn(with: credential) {
             (user, error) in
             if let error = error {
                 print(error.localizedDescription)
                 return
             } else{
                 print("User Signed In sucessfully")
+                  self.dismiss(animated: true, completion: nil)
+              self.redirectToHome()
 
             }
-            self.dismiss(animated: true, completion: nil)
+          
+            
             // User is signed in
             // ...
         }
     }
 
-    
     
     override func viewDidAppear(_ animated: Bool) {
         

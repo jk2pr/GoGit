@@ -16,9 +16,11 @@
 		D479A24E1FE4CEAE00632DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D479A24D1FE4CEAE00632DC0 /* Assets.xcassets */; };
 		D479A2511FE4CEAE00632DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D479A24F1FE4CEAE00632DC0 /* LaunchScreen.storyboard */; };
 		D488FB162014C06B005D7F14 /* logo_foreground.png in Resources */ = {isa = PBXBuildFile; fileRef = D488FB152014C06B005D7F14 /* logo_foreground.png */; };
+		D4B0D60C2021A009003EAC99 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B0D60B2021A009003EAC99 /* ProfileViewController.swift */; };
+		D4B0D60E2021ABB7003EAC99 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B0D60D2021ABB7003EAC99 /* Colors.swift */; };
 		D4C1C1EE201DE10800A5BCFC /* GitHubUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1C1ED201DE10800A5BCFC /* GitHubUserData.swift */; };
 		D4D7A0D7201446F000AC95A9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D7A0D6201446F000AC95A9 /* SplashViewController.swift */; };
-		D4FE07C32016AB2A00719F9D /* WebAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FE07C22016AB2A00719F9D /* WebAlertViewController.swift */; };
+		D4FE07C32016AB2A00719F9D /* LoginAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FE07C22016AB2A00719F9D /* LoginAlertViewController.swift */; };
 		D82155A69BFF70F8CD4745CD /* Pods_GoGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E0EB154CEBD934A80093E6 /* Pods_GoGit.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,9 +51,11 @@
 		D479A2501FE4CEAE00632DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D479A2521FE4CEAE00632DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D488FB152014C06B005D7F14 /* logo_foreground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_foreground.png; sourceTree = "<group>"; };
+		D4B0D60B2021A009003EAC99 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D4B0D60D2021ABB7003EAC99 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D4C1C1ED201DE10800A5BCFC /* GitHubUserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GitHubUserData.swift; path = GoGit/Model/GitHubUserData.swift; sourceTree = SOURCE_ROOT; };
 		D4D7A0D6201446F000AC95A9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		D4FE07C22016AB2A00719F9D /* WebAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAlertViewController.swift; sourceTree = "<group>"; };
+		D4FE07C22016AB2A00719F9D /* LoginAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAlertViewController.swift; sourceTree = "<group>"; };
 		EA29DA78C4EE5D2992307E3E /* Pods-GoGit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoGit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoGit/Pods-GoGit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,7 +85,6 @@
 			children = (
 				D4D7A0D6201446F000AC95A9 /* SplashViewController.swift */,
 				D479A2481FE4CEAE00632DC0 /* ViewController.swift */,
-				D4FE07C22016AB2A00719F9D /* WebAlertViewController.swift */,
 				D40BAF4C1FF0E14D00586787 /* WebViewController.swift */,
 			);
 			path = ViewController;
@@ -90,6 +93,7 @@
 		D459DB4D201D7990000D63F9 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				D4B0D60B2021A009003EAC99 /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -97,6 +101,7 @@
 		D459DB4E201D79CA000D63F9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				D4FE07C22016AB2A00719F9D /* LoginAlertViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D459DB50201D7A44000D63F9 /* Constants.swift */,
+				D4B0D60D2021ABB7003EAC99 /* Colors.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -151,8 +157,7 @@
 			children = (
 				D4C1C1ED201DE10800A5BCFC /* GitHubUserData.swift */,
 			);
-			name = Model;
-			path = "New Group";
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D4D06EB91FE88A7D007CA826 /* Frameworks */ = {
@@ -307,12 +312,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4FE07C32016AB2A00719F9D /* WebAlertViewController.swift in Sources */,
+				D4FE07C32016AB2A00719F9D /* LoginAlertViewController.swift in Sources */,
+				D4B0D60E2021ABB7003EAC99 /* Colors.swift in Sources */,
 				D479A2491FE4CEAE00632DC0 /* ViewController.swift in Sources */,
 				D4C1C1EE201DE10800A5BCFC /* GitHubUserData.swift in Sources */,
 				D479A2471FE4CEAE00632DC0 /* AppDelegate.swift in Sources */,
 				D459DB51201D7A45000D63F9 /* Constants.swift in Sources */,
 				D40BAF4D1FF0E14D00586787 /* WebViewController.swift in Sources */,
+				D4B0D60C2021A009003EAC99 /* ProfileViewController.swift in Sources */,
 				D4D7A0D7201446F000AC95A9 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,7 +464,6 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/SimpleIosApp/lib",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Auth",
 				);
@@ -524,7 +530,6 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/SimpleIosApp/lib",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Auth",
 				);

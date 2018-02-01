@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -18,6 +19,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        let userDefaults = UserDefaults.standard
+        if userDefaults.bool(forKey: "hasRunBefore") == false {
+            // remove keychain items here
+            // update the flag indicator
+            userDefaults.set(true, forKey: "hasRunBefore")
+            userDefaults.synchronize() // forces the app to update the NSUserDefaults
+            do {
+                try   Auth.auth().signOut()
+            }catch {
+                
+            }
+          
+        }
+       // self.navigationController.navigationBar.titleTextAttributes = [ NSAttributedStringKey.font:
+        let attributes = [NSAttributedStringKey.font: UIFont(name: "AvenirNextCondensed-DemiBold",
+                                                             size: 18)!,
+                          NSAttributedStringKey.foregroundColor: UIColor.white]
+        
+        UINavigationBar.appearance().titleTextAttributes = attributes
+        UIBarButtonItem.appearance().setTitleTextAttributes(attributes, for: .normal)
+        
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+        
+        let navBarColor = Colors.uicolorFromHex(rgbValue:0x0088a3)
+        UINavigationBar.appearance().barTintColor = navBarColor
+        UINavigationBar.appearance().tintColor = UIColor.white
+        
+       //
+        
 
         // Override point for customization after application launch.
         return true
