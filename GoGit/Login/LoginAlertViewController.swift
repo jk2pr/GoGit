@@ -68,6 +68,7 @@ class LoginAlertViewController: ViewController, WKNavigationDelegate{
                      let swiftyJsonVar = JSON(responseData.result.value!)
                     print(swiftyJsonVar)
                     let  accessToken = swiftyJsonVar["access_token"].string!
+                    UserDefaults.standard.setValue(accessToken, forKey: "access_token")
                     let credential = GitHubAuthProvider.credential(withToken: accessToken)
                     self.signInWithFireBase(credential: credential)
                    
