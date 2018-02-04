@@ -41,7 +41,7 @@ class LoginAlertViewController: ViewController, WKNavigationDelegate{
     }
     
     func getAccessToken(code: String){
-       //let accessTokenUrl = "https://github.com/login/oauth/access_token"
+       
        
         let params = ["client_id": Constants.clientId,
                       "client_secret": Constants.secretId,

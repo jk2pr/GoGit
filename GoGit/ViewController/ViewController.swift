@@ -12,7 +12,7 @@ import AlamofireSwiftyJSON
 import SwiftyJSON
 import SDWebImage
 
-class GitHubUserCell: UITableViewCell {
+private class GitHubUserCell: UITableViewCell {
     
     @IBOutlet weak var imageview: UIImageView!
     

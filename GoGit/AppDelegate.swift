@@ -35,16 +35,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        // self.navigationController.navigationBar.titleTextAttributes = [ NSAttributedStringKey.font:
         let attributes = [NSAttributedStringKey.font: UIFont(name: "AvenirNextCondensed-DemiBold",
                                                              size: 18)!,
-                          NSAttributedStringKey.foregroundColor: UIColor.white]
+                          NSAttributedStringKey.foregroundColor: UIColor.white,
+                          NSAttributedStringKey.backgroundColor: UIColor.clear]
         
         UINavigationBar.appearance().titleTextAttributes = attributes
+        
+        
         UIBarButtonItem.appearance().setTitleTextAttributes(attributes, for: .normal)
         
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
         
+        
         let navBarColor = Colors.uicolorFromHex(rgbValue:0x0088a3)
         UINavigationBar.appearance().barTintColor = navBarColor
         UINavigationBar.appearance().tintColor = UIColor.white
+        
+        let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
+        if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {
+            statusBar.backgroundColor = navBarColor
+        }
         
        //
         
