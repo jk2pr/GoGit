@@ -64,8 +64,8 @@
                         <outlet property="loginWithGitHub" destination="0Fn-UZ-5Lx" id="QBD-Xn-vzJ"/>
                         <outlet property="logo" destination="htC-qy-7NG" id="4O3-cy-NHy"/>
                         <outlet property="skip" destination="mit-55-HK6" id="jWo-Fe-UMF"/>
-                        <segue destination="7gm-Nu-bwO" kind="show" identifier="navigateToUserProfile" id="dJB-8s-g0o"/>
-                        <segue destination="Taa-WJ-zVl" kind="show" id="oWp-lF-EVq"/>
+                        <segue destination="7gm-Nu-bwO" kind="showDetail" identifier="redirectToHome" action="showViewController:sender:" id="dJB-8s-g0o"/>
+                        <segue destination="Taa-WJ-zVl" kind="show" identifier="redirectToLogin" id="oWp-lF-EVq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6DR-P6-07M" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -276,7 +276,7 @@
         <!--Login Alert View Controller-->
         <scene sceneID="hkb-hD-qu2">
             <objects>
-                <viewController storyboardIdentifier="webalertviewcontroller" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="Taa-WJ-zVl" customClass="LoginAlertViewController" customModule="GoGit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginalertviewcontroller" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="Taa-WJ-zVl" customClass="LoginAlertViewController" customModule="GoGit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="net-bj-Ceh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

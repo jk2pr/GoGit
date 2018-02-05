@@ -16,6 +16,7 @@ import SwiftyJSON
 class LoginAlertViewController: ViewController, WKNavigationDelegate{
 
     var auth: Auth!
+    var loginCallBack:LoginSuccessCallBack!
     
     @IBOutlet weak var webview: WKWebView!
     override func viewDidLoad() {
@@ -91,20 +92,15 @@ class LoginAlertViewController: ViewController, WKNavigationDelegate{
             } else{
                 print("User Signed In sucessfully")
                   self.dismiss(animated: true, completion: nil)
-              self.redirectToHome()
-
-            }
-          
-            
-            // User is signed in
-            // ...
-        }
+                 self.loginCallBack.loginSuccess()
+           }
+         }
     }
 
     
     override func viewDidAppear(_ animated: Bool) {
         
-        let u = Constants.githubLoginUrl + "?scope=user:email user:follow public_repo &client_id=" as String
+        let u = Constants.githubLoginUrl + "?scope=user repo_deployment repo &client_id=" as String
         let v = Constants.clientId + "&secretId=" as String
         let completeUrl = u +
             v+Constants.secretId + "&state=" + "123"

@@ -14,9 +14,6 @@ import SDWebImage
 
 class GitHubRepoCell:UITableViewCell{
     
-    @IBOutlet weak var payLoad: UILabel!
-    @IBOutlet weak var repoName: UILabel!
-    @IBOutlet weak var eventName: UILabel!
     @IBOutlet weak var actorName: UILabel!
     @IBOutlet weak var actorImage: UIImageView!
 }
@@ -42,23 +39,20 @@ UITableViewDelegate, UITableViewDataSource {
         
         let headers=["Authorization":accessToken,
                      "Accept": "application/json"]
-          let user=Auth.auth().currentUser
-        for u in (user?.providerData)!{
-            print("user Id "+u.uid)
-            print("Provider id "+u.providerID)
-            print("Description "+u.description)
-            
-            print("Next......")
-        
-        }
-        
-        
+    
         let feedUrl="https://api.github.com/users/jk2pr/received_events"
+        //?page=1&per_page=100"
         
-        var request = URLRequest(url: URL(string: feedUrl)!)
+        var components = URLComponents(string: feedUrl)!
+        components.queryItems = [URLQueryItem(name: "page", value: "1"),
+                                 URLQueryItem(name: "per_page", value: "100")]
+        
+        components.percentEncodedQuery = components.percentEncodedQuery?.replacingOccurrences(of: "+", with: "%2B")
+        
+        var request = URLRequest(url: components.url!)
         // Set headers
         request.allHTTPHeaderFields=headers
-    
+        request.httpMethod="GET"
         let task = URLSession.shared.dataTask(with: request) {
             (data, response, error) in
             do{

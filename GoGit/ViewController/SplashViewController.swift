@@ -12,19 +12,20 @@ import WebKit
 import Firebase
 
 
+protocol LoginSuccessCallBack {
+    func loginSuccess()
+}
 
-class SplashViewController: UIViewController{
+class SplashViewController: UIViewController,LoginSuccessCallBack{
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var skip: UIButton!
     @IBOutlet weak var loginWithGitHub: UIButton!
     var user:User!
     
-    override func viewDidLoad() {
-         user=Auth.auth().currentUser
-    }
+   
     override func viewWillAppear(_ animated: Bool) {
     
-       
+        user=Auth.auth().currentUser
         if(user==nil){
             skip.isHidden=false
             loginWithGitHub.isHidden=false
@@ -32,15 +33,11 @@ class SplashViewController: UIViewController{
         }
         else
         {
-            let uid = user.uid
-            let email = user.email
-            let photoURL = user.photoURL
-            print(uid)
-            print(email)
-            print(photoURL)
-            redirectToProfile()
-            print("Navigated to User Profile")
+            redirectToHome()
         }
+    }
+    func loginSuccess() {
+        redirectToHome()
     }
     private func animate(){
         self.logo.transform = CGAffineTransform(translationX: 0, y: logo.frame.origin.y+200)
@@ -56,17 +53,22 @@ class SplashViewController: UIViewController{
         })
         
     }
-    private func redirectToProfile()
+    private func redirectToHome()
     {
-        DispatchQueue.main.async() {
-            [unowned self] in
-          //  self.performSegue(withIdentifier: "navigatetouserprofile", sender: self)
-            self.performSegue(withIdentifier: "navigateToUserProfile", sender: self)
+        let when = DispatchTime.now() + 1 // change 1 to desired number of seconds
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            // Your code with delay
+            self.performSegue(withIdentifier: "redirectToHome", sender: self)
         }
-        
-      //  self.performSegue(withIdentifier: "navigatetouserprofile", sender: self)
+    }
+       
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "redirectToLogin"{
+        let toViewController = segue.destination as! LoginAlertViewController
+            toViewController.loginCallBack = self
+            
         }
-
+    }
 @IBAction func onSkip(_ sender: UIButton) {
     if(!self.logo.isAnimating)
     {//self.performSegue(withIdentifier: "navigateToHome", sender: self)
@@ -75,8 +77,9 @@ class SplashViewController: UIViewController{
 }
 @IBAction func onLoginButtonClick(_ sender: UIButton) {
     if(!self.logo.isAnimating){
-        let alertViewController = self.storyboard?.instantiateViewController(withIdentifier: "webalertviewcontroller") as!  LoginAlertViewController
-        self.present(alertViewController, animated: true, completion: nil)
+         self.performSegue(withIdentifier: "redirectToLogin", sender: self)
+    /*    let alertViewController = self.storyboard?.instantiateViewController(withIdentifier: "loginalertviewcontroller") as!  LoginAlertViewController
+        self.present(alertViewController, animated: true, completion: nil)*/
     }
 }
 }
