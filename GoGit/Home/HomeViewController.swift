@@ -40,7 +40,7 @@ UITableViewDelegate, UITableViewDataSource {
         
         let accessToken=UserDefaults.standard.value(forKey: "access_token") as! String
         
-        let headers=["Authorization": accessToken,
+        let headers=["Authorization":accessToken,
                      "Accept": "application/json"]
           let user=Auth.auth().currentUser
         for u in (user?.providerData)!{
@@ -87,22 +87,35 @@ UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! GitHubRepoCell
         let data=repos[indexPath.row]
-        let fullText=(data.actor?.display_login)!+" "+getEventNameByType(
-            eventName: data.type!)//+" "+data.repo?.name
-        cell.actorName.text=fullText+" "+(data.repo?.name)!
+        let eventName=getEventNameByType(eventName: data.type!)
+        let actorName=data.actor?.display_login!
+        let repoName=data.repo?.name!
+
+        cell.actorName.text=actorName!+" "+eventName+" "+repoName!
         let url=URL(string:(data.actor?.avatar_url!)!)
         cell.actorImage.sd_setImage(with: url)
-       // cell.eventName.text=getEventNameByType(eventName: data.type!)
-        //cell.repoName.text=data.repo?.name
-        
-        let attributedString = NSMutableAttributedString(string: "Want to learn iOS? You should visit the best source of free iOS tutorials!")
-        attributedString.addAttribute(.link, value: "https://www.hackingwithswift.com", range: NSRange(location: 19, length: 55))
+          
+        let attributedString = NSMutableAttributedString(string: cell.actorName.text!)
+        attributedString.addAttribute(.link, value: data.actor?.url! as Any, range: NSRange(location: 0, length: (data.actor?.display_login?.count)!))
+        cell.actorName.attributedText=attributedString
 
-        
+        decorateCell(cell: cell)
         
         return cell
         
         
+    }
+    func decorateCell(cell: GitHubRepoCell){
+        let contentView = cell.contentView
+        let margin=CGFloat(5)
+        cell.contentView.layoutMargins.bottom=margin
+       cell.backgroundColor=UIColor.white
+        contentView.layer.cornerRadius=1
+        contentView.layer.borderColor=UIColor.lightGray.cgColor
+        contentView.layer.borderWidth=0.5
+        contentView.layer.shadowRadius=1
+        contentView.layer.shadowOpacity = 0.01
+        contentView.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: contentView.layer.cornerRadius).cgPath
     }
     
     func getEventNameByType(eventName:String) -> String{
