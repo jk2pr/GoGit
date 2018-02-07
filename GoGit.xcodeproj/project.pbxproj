@@ -14,9 +14,7 @@
 		D479A2471FE4CEAE00632DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */; };
 		D479A2491FE4CEAE00632DC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479A2481FE4CEAE00632DC0 /* ViewController.swift */; };
 		D479A24C1FE4CEAE00632DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D479A24A1FE4CEAE00632DC0 /* Main.storyboard */; };
-		D479A24E1FE4CEAE00632DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D479A24D1FE4CEAE00632DC0 /* Assets.xcassets */; };
 		D479A2511FE4CEAE00632DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D479A24F1FE4CEAE00632DC0 /* LaunchScreen.storyboard */; };
-		D488FB162014C06B005D7F14 /* logo_foreground.png in Resources */ = {isa = PBXBuildFile; fileRef = D488FB152014C06B005D7F14 /* logo_foreground.png */; };
 		D4B0D60C2021A009003EAC99 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B0D60B2021A009003EAC99 /* ProfileViewController.swift */; };
 		D4B0D60E2021ABB7003EAC99 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B0D60D2021ABB7003EAC99 /* Colors.swift */; };
 		D4BC585320269FF50054B90C /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BC584F20269FF40054B90C /* Json4Swift_Base.swift */; };
@@ -24,6 +22,7 @@
 		D4BC585520269FF50054B90C /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BC585120269FF40054B90C /* Actor.swift */; };
 		D4BC585620269FF50054B90C /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BC585220269FF50054B90C /* Repo.swift */; };
 		D4C1C1EE201DE10800A5BCFC /* GitHubUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1C1ED201DE10800A5BCFC /* GitHubUserData.swift */; };
+		D4CA4C49202B276100864560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CA4C48202B276100864560 /* Assets.xcassets */; };
 		D4D7A0D7201446F000AC95A9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D7A0D6201446F000AC95A9 /* SplashViewController.swift */; };
 		D4FE07C32016AB2A00719F9D /* LoginAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FE07C22016AB2A00719F9D /* LoginAlertViewController.swift */; };
 		D82155A69BFF70F8CD4745CD /* Pods_GoGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E0EB154CEBD934A80093E6 /* Pods_GoGit.framework */; };
@@ -53,10 +52,8 @@
 		D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D479A2481FE4CEAE00632DC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D479A24B1FE4CEAE00632DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D479A24D1FE4CEAE00632DC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D479A2501FE4CEAE00632DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D479A2521FE4CEAE00632DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D488FB152014C06B005D7F14 /* logo_foreground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_foreground.png; sourceTree = "<group>"; };
 		D4B0D60B2021A009003EAC99 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D4B0D60D2021ABB7003EAC99 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D4BC584F20269FF40054B90C /* Json4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json4Swift_Base.swift; sourceTree = "<group>"; };
@@ -64,6 +61,7 @@
 		D4BC585120269FF40054B90C /* Actor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
 		D4BC585220269FF50054B90C /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		D4C1C1ED201DE10800A5BCFC /* GitHubUserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GitHubUserData.swift; path = GoGit/Model/Profile/GitHubUserData.swift; sourceTree = SOURCE_ROOT; };
+		D4CA4C48202B276100864560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4D7A0D6201446F000AC95A9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		D4FE07C22016AB2A00719F9D /* LoginAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAlertViewController.swift; sourceTree = "<group>"; };
 		EA29DA78C4EE5D2992307E3E /* Pods-GoGit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoGit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoGit/Pods-GoGit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +153,7 @@
 		D479A23A1FE4CEAD00632DC0 = {
 			isa = PBXGroup;
 			children = (
+				D4CA4C48202B276100864560 /* Assets.xcassets */,
 				D479A2451FE4CEAE00632DC0 /* GoGit */,
 				D479A2441FE4CEAE00632DC0 /* Products */,
 				D4D06EB91FE88A7D007CA826 /* Frameworks */,
@@ -179,10 +178,8 @@
 				D459DB4E201D79CA000D63F9 /* Login */,
 				D459DB4D201D7990000D63F9 /* Profile */,
 				D459DB4C201D7949000D63F9 /* ViewController */,
-				D488FB152014C06B005D7F14 /* logo_foreground.png */,
 				D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */,
 				D479A24A1FE4CEAE00632DC0 /* Main.storyboard */,
-				D479A24D1FE4CEAE00632DC0 /* Assets.xcassets */,
 				D479A24F1FE4CEAE00632DC0 /* LaunchScreen.storyboard */,
 				D479A2521FE4CEAE00632DC0 /* Info.plist */,
 				D40683032018B1A800ED558A /* GoogleService-Info.plist */,
@@ -271,9 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D479A2511FE4CEAE00632DC0 /* LaunchScreen.storyboard in Resources */,
-				D488FB162014C06B005D7F14 /* logo_foreground.png in Resources */,
 				D40683042018B1A800ED558A /* GoogleService-Info.plist in Resources */,
-				D479A24E1FE4CEAE00632DC0 /* Assets.xcassets in Resources */,
+				D4CA4C49202B276100864560 /* Assets.xcassets in Resources */,
 				D479A24C1FE4CEAE00632DC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

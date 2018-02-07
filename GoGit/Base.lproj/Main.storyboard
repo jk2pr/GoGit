@@ -138,11 +138,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="X8e-NT-V85"/>
                     </view>
-                    <navigationItem key="navigationItem" title="GoGit" largeTitleDisplayMode="always" id="Pt2-NS-cex">
-                        <rightBarButtonItems>
-                            <barButtonItem title="Item" id="gPm-gG-6Gk"/>
-                            <barButtonItem title="Item" id="ljZ-70-r1E"/>
-                        </rightBarButtonItems>
+                    <navigationItem key="navigationItem" title="GoGit" id="Pt2-NS-cex">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="more" id="gPm-gG-6Gk"/>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="RVN-4x-kqu" id="WZm-GS-buw"/>
@@ -452,6 +449,7 @@
     </scenes>
     <resources>
         <image name="logo_foreground.png" width="324" height="324"/>
+        <image name="more" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sQC-Ct-dtX"/>
