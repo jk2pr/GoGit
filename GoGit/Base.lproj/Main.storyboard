@@ -64,7 +64,7 @@
                         <outlet property="loginWithGitHub" destination="0Fn-UZ-5Lx" id="QBD-Xn-vzJ"/>
                         <outlet property="logo" destination="htC-qy-7NG" id="4O3-cy-NHy"/>
                         <outlet property="skip" destination="mit-55-HK6" id="jWo-Fe-UMF"/>
-                        <segue destination="7gm-Nu-bwO" kind="showDetail" identifier="redirectToHome" action="showViewController:sender:" id="dJB-8s-g0o"/>
+                        <segue destination="7gm-Nu-bwO" kind="show" identifier="redirectToHome" id="dJB-8s-g0o"/>
                         <segue destination="Taa-WJ-zVl" kind="show" identifier="redirectToLogin" id="oWp-lF-EVq"/>
                     </connections>
                 </viewController>
@@ -81,7 +81,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RVN-4x-kqu">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="73y-g9-LMm" customClass="GitHubRepoCell" customModule="GoGit" customModuleProvider="target">
@@ -138,7 +138,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="X8e-NT-V85"/>
                     </view>
-                    <navigationItem key="navigationItem" title="GoGit" id="Pt2-NS-cex"/>
+                    <navigationItem key="navigationItem" title="GoGit" largeTitleDisplayMode="always" id="Pt2-NS-cex">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" id="gPm-gG-6Gk"/>
+                            <barButtonItem title="Item" id="ljZ-70-r1E"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="RVN-4x-kqu" id="WZm-GS-buw"/>
                     </connections>
@@ -310,15 +315,11 @@
         <!--Home-->
         <scene sceneID="dnW-iX-92A">
             <objects>
-                <navigationController title="Home" toolbarHidden="NO" id="7gm-Nu-bwO" sceneMemberID="viewController">
+                <navigationController title="Home" id="7gm-Nu-bwO" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0kn-z3-FcH">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jDY-RL-jl3">
-                        <rect key="frame" x="0.0" y="729" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
                     <connections>
                         <segue destination="tqx-6I-shZ" kind="relationship" relationship="rootViewController" id="7II-3v-92c"/>
                     </connections>
@@ -327,7 +328,7 @@
             </objects>
             <point key="canvasLocation" x="-884" y="-1057"/>
         </scene>
-        <!--Home-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoGit" customModuleProvider="target" sceneMemberID="viewController">
@@ -404,7 +405,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="bHx-07-Bne"/>
                     <connections>
                         <outlet property="tableView" destination="NXA-Zf-IcL" id="qz3-gU-fwc"/>
                         <segue destination="Lvr-om-8O4" kind="show" identifier="segue" id="sQC-Ct-dtX"/>
