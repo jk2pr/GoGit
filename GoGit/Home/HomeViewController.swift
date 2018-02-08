@@ -29,6 +29,11 @@ UITableViewDelegate, UITableViewDataSource {
         
         navigationController?.hidesBarsOnSwipe=true
     }
+    
+    /// <#Description#>
+    ///
+    /// - Parameter sender: <#sender description#>
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         
