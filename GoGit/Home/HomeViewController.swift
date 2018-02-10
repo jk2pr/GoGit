@@ -29,11 +29,15 @@ UITableViewDelegate, UITableViewDataSource {
         
         navigationController?.hidesBarsOnSwipe=true
     }
+   
     
-    /// <#Description#>
-    ///
-    /// - Parameter sender: <#sender description#>
-  
+   
+    @IBAction func onMore(_ sender: UIBarButtonItem) {
+        
+        print("More click")
+    }
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

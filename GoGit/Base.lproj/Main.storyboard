@@ -139,7 +139,11 @@
                         <viewLayoutGuide key="safeArea" id="X8e-NT-V85"/>
                     </view>
                     <navigationItem key="navigationItem" title="GoGit" id="Pt2-NS-cex">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="more" style="plain" id="gPm-gG-6Gk"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="more" style="plain" id="gPm-gG-6Gk">
+                            <connections>
+                                <action selector="onMore:" destination="tqx-6I-shZ" id="Ues-mc-vhV"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="RVN-4x-kqu" id="WZm-GS-buw"/>
