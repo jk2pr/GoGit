@@ -35,6 +35,13 @@ UITableViewDelegate, UITableViewDataSource {
     @IBAction func onMore(_ sender: UIBarButtonItem) {
         
         print("More click")
+        
+        let alertController = UIAlertController(title: nil, message: "Signed in as jk2pr", preferredStyle: .actionSheet)
+        for i in ["Your Profile","Your Stars", "Logout", "Setting"] {
+            alertController.addAction(UIAlertAction(title: i, style: .default, handler: nil))
+        }
+        self.present(alertController, animated: true, completion: nil)
+
     }
    
     
