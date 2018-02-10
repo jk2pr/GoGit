@@ -36,10 +36,11 @@ UITableViewDelegate, UITableViewDataSource {
         
         print("More click")
         
-        let alertController = UIAlertController(title: nil, message: "Signed in as jk2pr", preferredStyle: .actionSheet)
+        let alertController = UIAlertController(title: "Signed in as jk2pr", message: nil, preferredStyle: .actionSheet)
         for i in ["Your Profile","Your Stars", "Logout", "Setting"] {
-            alertController.addAction(UIAlertAction(title: i, style: .default, handler: nil))
+            alertController.addAction(UIAlertAction(title: i, style: .destructive, handler: nil))
         }
+        
         self.present(alertController, animated: true, completion: nil)
 
     }
