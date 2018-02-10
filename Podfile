@@ -9,6 +9,10 @@ target 'GoGit' do
   pod 'SwiftyJSON'
   pod 'AlamofireSwiftyJSON'
   pod 'SDWebImage'
+
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
+
   # Pods for GoGit
 
 end
