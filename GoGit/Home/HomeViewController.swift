@@ -27,18 +27,34 @@ UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        navigationController?.hidesBarsOnSwipe=true
+        self.navigationController?.isNavigationBarHidden = false
     }
    
     
-   
+    private func redirectToUseProfile()
+    {
+      
+        self.performSegue(withIdentifier: "navigateToProfile", sender: self)
+    
+        
+    }
     @IBAction func onMore(_ sender: UIBarButtonItem) {
         
         print("More click")
         
         let alertController = UIAlertController(title: "Signed in as jk2pr", message: nil, preferredStyle: .actionSheet)
+        
+        let actionHandler = { (action:UIAlertAction!) -> Void in
+            switch action.title {
+            case "Your Profile"?:
+                self.redirectToUseProfile()
+            default: break
+                
+            }
+        }
+        
         for i in ["Your Profile","Your Stars", "Logout", "Setting"] {
-            alertController.addAction(UIAlertAction(title: i, style: .destructive, handler: nil))
+            alertController.addAction(UIAlertAction(title: i, style: .destructive, handler:actionHandler))
         }
         
         self.present(alertController, animated: true, completion: nil)

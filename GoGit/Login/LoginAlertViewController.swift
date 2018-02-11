@@ -79,10 +79,7 @@ class LoginAlertViewController: ViewController, WKNavigationDelegate{
         
         
     }
-    private func redirectToHome()
-    {
-        self.performSegue(withIdentifier: "navigateToUserProfile", sender: self)
-    }
+   
     func signInWithFireBase(credential:AuthCredential){
         auth.signIn(with: credential) {
             (user, error) in
