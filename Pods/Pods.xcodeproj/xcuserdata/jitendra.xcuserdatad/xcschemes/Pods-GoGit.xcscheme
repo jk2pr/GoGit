@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "947A642B5D7CD37BDC41A3863FD28646"
+               BlueprintIdentifier = "BAB3B03B148E0C36066F685D2D90D7E8"
                BuildableName = "Pods_GoGit.framework"
                BlueprintName = "Pods-GoGit"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "947A642B5D7CD37BDC41A3863FD28646"
+            BlueprintIdentifier = "BAB3B03B148E0C36066F685D2D90D7E8"
             BuildableName = "Pods_GoGit.framework"
             BlueprintName = "Pods-GoGit"
             ReferencedContainer = "container:Pods.xcodeproj">

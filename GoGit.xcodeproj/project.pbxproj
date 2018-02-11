@@ -10,6 +10,8 @@
 		D40683042018B1A800ED558A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D40683032018B1A800ED558A /* GoogleService-Info.plist */; };
 		D40BAF4D1FF0E14D00586787 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BAF4C1FF0E14D00586787 /* WebViewController.swift */; };
 		D41A7C4B20253449008BC211 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41A7C4A20253449008BC211 /* HomeViewController.swift */; };
+		D4367184203006DF00BF1B68 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4367182203006DE00BF1B68 /* Plan.swift */; };
+		D4367185203006DF00BF1B68 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4367183203006DF00BF1B68 /* Login.swift */; };
 		D459DB51201D7A45000D63F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D459DB50201D7A44000D63F9 /* Constants.swift */; };
 		D479A2471FE4CEAE00632DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */; };
 		D479A2491FE4CEAE00632DC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479A2481FE4CEAE00632DC0 /* ViewController.swift */; };
@@ -47,6 +49,8 @@
 		D40683032018B1A800ED558A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D40BAF4C1FF0E14D00586787 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		D41A7C4A20253449008BC211 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D4367182203006DE00BF1B68 /* Plan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		D4367183203006DF00BF1B68 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		D459DB50201D7A44000D63F9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D479A2431FE4CEAE00632DC0 /* GoGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +117,15 @@
 				D4C1C1ED201DE10800A5BCFC /* GitHubUserData.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		D436717D202FFA4700BF1B68 /* LoginUserData */ = {
+			isa = PBXGroup;
+			children = (
+				D4367183203006DF00BF1B68 /* Login.swift */,
+				D4367182203006DE00BF1B68 /* Plan.swift */,
+			);
+			path = LoginUserData;
 			sourceTree = "<group>";
 		};
 		D459DB4C201D7949000D63F9 /* ViewController */ = {
@@ -190,6 +203,7 @@
 		D4C1C1EC201DE0EB00A5BCFC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D436717D202FFA4700BF1B68 /* LoginUserData */,
 				D41A7C5520253893008BC211 /* Profile */,
 				D41A7C4C202536F5008BC211 /* Feed */,
 			);
@@ -321,7 +335,7 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireSwiftyJSON/AlamofireSwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -333,7 +347,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireSwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -356,6 +370,7 @@
 				D479A2491FE4CEAE00632DC0 /* ViewController.swift in Sources */,
 				D4C1C1EE201DE10800A5BCFC /* GitHubUserData.swift in Sources */,
 				D4BC585520269FF50054B90C /* Actor.swift in Sources */,
+				D4367185203006DF00BF1B68 /* Login.swift in Sources */,
 				D4BC585320269FF50054B90C /* Json4Swift_Base.swift in Sources */,
 				D479A2471FE4CEAE00632DC0 /* AppDelegate.swift in Sources */,
 				D4BC585620269FF50054B90C /* Repo.swift in Sources */,
@@ -365,6 +380,7 @@
 				D40BAF4D1FF0E14D00586787 /* WebViewController.swift in Sources */,
 				D4B0D60C2021A009003EAC99 /* ProfileViewController.swift in Sources */,
 				D4D7A0D7201446F000AC95A9 /* SplashViewController.swift in Sources */,
+				D4367184203006DF00BF1B68 /* Plan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

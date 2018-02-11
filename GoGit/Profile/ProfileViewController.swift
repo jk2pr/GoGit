@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+
 class ProfileViewController: UIViewController {
 
     @IBOutlet weak var email: UILabel!
@@ -27,8 +28,12 @@ class ProfileViewController: UIViewController {
         }
         
         // Do any additional setup after loading the view.
+        
+//        let params = ["client_id": Constants.clientId,
+//                      "client_secret": Constants.secretId,
+//                      "redirect_uri": Constants.REDIRECT_URL_CALLBACK,
+//                   ]
+        
     }
-
-   
-
+    
 }

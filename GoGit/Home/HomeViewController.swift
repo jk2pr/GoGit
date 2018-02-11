@@ -70,12 +70,20 @@ UITableViewDelegate, UITableViewDataSource {
         
         let accessToken=UserDefaults.standard.value(forKey: "access_token") as! String
         
-        let headers=["Authorization":accessToken,
+        let headers=["Authorization":"token "+accessToken,
                      "Accept": "application/json"]
     
-        let feedUrl="https://api.github.com/users/jk2pr/received_events"
+        
         //?page=1&per_page=100"
         
+       // let defaults = UserDefaults.standard
+        
+        let user=Login(dictionary: UserDefaults.standard.object(forKey: "user") as! NSDictionary)
+        //let user = NSKeyedUnarchiver.unarchiveObject(with: decoded as! Data) as! Login
+
+        
+       // let user=defaults.object(forKey: "user") as! Login
+        let feedUrl=Constants.feedUrl.replacingOccurrences(of: "LOGIN_USER", with: user!.login!)
         var components = URLComponents(string: feedUrl)!
         components.queryItems = [URLQueryItem(name: "page", value: "1"),
                                  URLQueryItem(name: "per_page", value: "100")]

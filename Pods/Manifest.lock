@@ -38,7 +38,10 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
-  - RxCocoa (4.1.1):
+  - RxAlamofire (4.0.0):
+    - RxAlamofire/Core (= 4.0.0)
+  - RxAlamofire/Core (4.0.0):
+    - Alamofire (~> 4.5)
     - RxSwift (~> 4.0)
   - RxSwift (4.1.1)
   - SDWebImage (4.2.3):
@@ -50,8 +53,7 @@ DEPENDENCIES:
   - Alamofire
   - AlamofireSwiftyJSON
   - Firebase/Auth
-  - RxCocoa (~> 4.0)
-  - RxSwift (~> 4.0)
+  - RxAlamofire
   - SDWebImage
   - SwiftyJSON
 
@@ -66,11 +68,11 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
-  RxCocoa: fd0862fd2df95fa55562ad28ffd2522c25eb4a85
+  RxAlamofire: 6ea579ac53bf14cb4bc7049a3866e5a769989b1d
   RxSwift: c6e3b1c7b325c7d121cd4327e9d98b7ed746b570
   SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: ae95ac02085ad94a3edf2c1782951b9323452e63
+PODFILE CHECKSUM: 68f86f3297b0fb69ecbf74ccc59e957d4b7ec766
 
 COCOAPODS: 1.4.0

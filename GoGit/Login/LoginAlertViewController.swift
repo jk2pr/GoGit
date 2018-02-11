@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import WebKit
 import Firebase
+import RxAlamofire
 import Alamofire
 import SwiftyJSON
 
@@ -72,6 +73,7 @@ class LoginAlertViewController: ViewController, WKNavigationDelegate{
                     UserDefaults.standard.setValue(accessToken, forKey: "access_token")
                     let credential = GitHubAuthProvider.credential(withToken: accessToken)
                     self.signInWithFireBase(credential: credential)
+                   //
                    
                 }
         }
@@ -88,8 +90,8 @@ class LoginAlertViewController: ViewController, WKNavigationDelegate{
                 return
             } else{
                 print("User Signed In sucessfully")
-                  self.dismiss(animated: true, completion: nil)
-                 self.loginCallBack.loginSuccess()
+                 self.getUserProfile()
+                
            }
          }
     }
@@ -109,8 +111,41 @@ class LoginAlertViewController: ViewController, WKNavigationDelegate{
        
         
     }
-    override func viewDidDisappear(_ animated: Bool) {
+    func getUserProfile(){
+        let accessToken=UserDefaults.standard.value(forKey: "access_token") as! String
+        let headers=["Authorization":"token "+accessToken,
+                     "Accept": "application/json"]
+        RxAlamofire.requestJSON(.get, Constants.urlProfile,headers:headers)
+            .debug()
+            .subscribe(onNext:{[weak self](r, json) in
+                let d=json as! NSDictionary
+                let defaults = UserDefaults.standard
+                let data=Login(dictionary:d)
+                print(data!)
+               // let encodedData = NSKeyedArchiver.archivedData(withRootObject: data as Any)
+                defaults.set(data?.dictionaryRepresentation(),forKey: "user")
+                let when = DispatchTime.now() + 2 // change 2 to desired number of seconds
+                DispatchQueue.main.asyncAfter(deadline: when) {
+                self!.dismiss(animated: true, completion: nil)
+                self!.loginCallBack.loginSuccess()
+                
+                }
+                }
+            ,
+            onError: {  (error) in
+                print(error.localizedDescription)
+            },
+            onCompleted:{
+                    print("onCompleted")
+            })
+
+    }
+    func parseJson(data:Any){
+        
+           // let swiftyJsonVar = try JSON(data) as! NSDictionary
+            //print(swiftyJsonVar)
+        
+        
         
     }
-    
 }

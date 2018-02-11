@@ -12,5 +12,7 @@ struct  Constants {
     secretId="b62824aa8700b99feb0e576d97130d801b47fe1c",
     githubLoginUrl="https://github.com/login/oauth/authorize",
     REDIRECT_URL_CALLBACK = "https://gogit-5a346.firebaseapp.com/__/auth/handler",
-    accessTokenUrl = "https://github.com/login/oauth/access_token"
+    accessTokenUrl = "https://github.com/login/oauth/access_token",
+    urlProfile="https://api.github.com/user",
+    feedUrl="https://api.github.com/users/LOGIN_USER/received_events"
     }
