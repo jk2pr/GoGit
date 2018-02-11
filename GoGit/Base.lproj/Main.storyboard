@@ -23,12 +23,12 @@
         <!--Splash View Controller-->
         <scene sceneID="DAn-ws-jPl">
             <objects>
-                <viewController id="Cw9-jp-b1C" customClass="SplashViewController" customModule="GoGit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashViewController" id="Cw9-jp-b1C" customClass="SplashViewController" customModule="GoGit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ag8-Zb-In2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" image="logo_foreground.png" translatesAutoresizingMaskIntoConstraints="NO" id="htC-qy-7NG">
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="htC-qy-7NG">
                                 <rect key="frame" x="25.666666666666657" y="244" width="324" height="324"/>
                             </imageView>
                             <button opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fn-UZ-5Lx">
@@ -445,7 +445,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo_foreground.png" width="324" height="324"/>
+        <image name="Image" width="324" height="324"/>
         <image name="more" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>

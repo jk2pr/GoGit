@@ -48,6 +48,13 @@ UITableViewDelegate, UITableViewDataSource {
             switch action.title {
             case "Your Profile"?:
                 self.redirectToUseProfile()
+            case "Logout"?:
+                 AppDelegate.self().logout()
+                 let when = DispatchTime.now() + 2 // change 1 to desired number of seconds
+                 DispatchQueue.main.asyncAfter(deadline: when) {
+                    Switcher.updateRootVC()
+                    
+                }
             default: break
                 
             }
@@ -78,12 +85,12 @@ UITableViewDelegate, UITableViewDataSource {
         
        // let defaults = UserDefaults.standard
         
-        let user=Login(dictionary: UserDefaults.standard.object(forKey: "user") as! NSDictionary)
+        let user=Constants.getLoginData()
         //let user = NSKeyedUnarchiver.unarchiveObject(with: decoded as! Data) as! Login
 
         
        // let user=defaults.object(forKey: "user") as! Login
-        let feedUrl=Constants.feedUrl.replacingOccurrences(of: "LOGIN_USER", with: user!.login!)
+        let feedUrl=Constants.feedUrl.replacingOccurrences(of: "LOGIN_USER", with: user.login!)
         var components = URLComponents(string: feedUrl)!
         components.queryItems = [URLQueryItem(name: "page", value: "1"),
                                  URLQueryItem(name: "per_page", value: "100")]

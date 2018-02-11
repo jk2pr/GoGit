@@ -15,4 +15,13 @@ struct  Constants {
     accessTokenUrl = "https://github.com/login/oauth/access_token",
     urlProfile="https://api.github.com/user",
     feedUrl="https://api.github.com/users/LOGIN_USER/received_events"
+    static var user:Login!
+    static func getLoginData() -> Login
+    {
+        if(Constants.user==nil){
+            Constants.user=Login(dictionary: UserDefaults.standard.object(forKey: "user") as! NSDictionary)
+        }
+        return Constants.user
+        
+    }
     }

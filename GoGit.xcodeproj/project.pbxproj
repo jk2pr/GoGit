@@ -12,6 +12,7 @@
 		D41A7C4B20253449008BC211 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41A7C4A20253449008BC211 /* HomeViewController.swift */; };
 		D4367184203006DF00BF1B68 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4367182203006DE00BF1B68 /* Plan.swift */; };
 		D4367185203006DF00BF1B68 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4367183203006DF00BF1B68 /* Login.swift */; };
+		D43671872030709700BF1B68 /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43671862030709700BF1B68 /* Switcher.swift */; };
 		D459DB51201D7A45000D63F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D459DB50201D7A44000D63F9 /* Constants.swift */; };
 		D479A2471FE4CEAE00632DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */; };
 		D479A2491FE4CEAE00632DC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479A2481FE4CEAE00632DC0 /* ViewController.swift */; };
@@ -51,6 +52,7 @@
 		D41A7C4A20253449008BC211 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D4367182203006DE00BF1B68 /* Plan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
 		D4367183203006DF00BF1B68 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		D43671862030709700BF1B68 /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
 		D459DB50201D7A44000D63F9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D479A2431FE4CEAE00632DC0 /* GoGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			children = (
 				D459DB50201D7A44000D63F9 /* Constants.swift */,
 				D4B0D60D2021ABB7003EAC99 /* Colors.swift */,
+				D43671862030709700BF1B68 /* Switcher.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				D4B0D60C2021A009003EAC99 /* ProfileViewController.swift in Sources */,
 				D4D7A0D7201446F000AC95A9 /* SplashViewController.swift in Sources */,
 				D4367184203006DF00BF1B68 /* Plan.swift in Sources */,
+				D43671872030709700BF1B68 /* Switcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
