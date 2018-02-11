@@ -8,7 +8,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -147,7 +146,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="RVN-4x-kqu" id="WZm-GS-buw"/>
-                        <segue destination="O8Q-Q2-Fif" kind="show" identifier="navigateToProfile" action="showDetailViewController:sender:" id="F75-FQ-8QR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uL4-K1-QKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -163,29 +161,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fv1-JD-7H6">
-                                <rect key="frame" x="0.0" y="96" width="375" height="641"/>
+                                <rect key="frame" x="0.0" y="96" width="375" height="690"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fVP-NK-Byc">
-                                        <rect key="frame" x="127" y="-12916" width="120" height="120"/>
+                                        <rect key="frame" x="127" y="8" width="120" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="8fW-Yq-oj9"/>
                                             <constraint firstAttribute="width" constant="120" id="J4B-hR-w9K"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DISPLAY NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2Q-IQ-0Eu">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DISPLAY NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2Q-IQ-0Eu">
                                         <rect key="frame" x="102.66666666666667" y="136" width="169.66666666666663" height="24.666666666666657"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClB-sc-cAi">
-                                        <rect key="frame" x="167" y="168.66666666666663" width="41" height="20.333333333333343"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClB-sc-cAi">
+                                        <rect key="frame" x="167" y="168.66666666666669" width="41" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jn-aN-pbj">
-                                        <rect key="frame" x="5" y="-484" width="365" height="45"/>
+                                        <rect key="frame" x="5" y="209" width="365" height="45"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aP5-Qm-6wK">
                                                 <rect key="frame" x="0.0" y="0.0" width="92" height="45"/>
@@ -221,7 +219,7 @@
                                         </constraints>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eXJ-Lx-1pD">
-                                        <rect key="frame" x="0.0" y="-431" width="375" height="415"/>
+                                        <rect key="frame" x="0.0" y="262" width="375" height="415"/>
                                         <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="415" id="Xpx-bS-ejh"/>
@@ -251,23 +249,16 @@
                             <constraint firstItem="fv1-JD-7H6" firstAttribute="width" secondItem="F6W-w3-Q7a" secondAttribute="width" id="039-mI-CLn"/>
                             <constraint firstItem="fv1-JD-7H6" firstAttribute="bottom" secondItem="F6W-w3-Q7a" secondAttribute="bottom" constant="8" id="36J-Q4-HFb"/>
                             <constraint firstItem="fv1-JD-7H6" firstAttribute="top" secondItem="F6W-w3-Q7a" secondAttribute="top" constant="8" id="b44-Mf-cbx"/>
-                            <constraint firstItem="fv1-JD-7H6" firstAttribute="height" secondItem="F6W-w3-Q7a" secondAttribute="height" id="csg-4l-P7A"/>
                             <constraint firstItem="fv1-JD-7H6" firstAttribute="centerX" secondItem="D2g-6A-9FB" secondAttribute="centerX" id="pGD-cS-8fm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="F6W-w3-Q7a"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="User Profile" id="uYL-ho-n0s">
-                        <rightBarButtonItems>
-                            <barButtonItem title="Logout" style="plain" id="Iro-Te-bqt">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </barButtonItem>
-                            <barButtonItem title="Setting" style="plain" id="AvI-uh-c7B">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="3Ch-tf-da8"/>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="displayName" destination="Q2Q-IQ-0Eu" id="Xcd-km-4g1"/>
                         <outlet property="email" destination="ClB-sc-cAi" id="FHX-z1-OJG"/>
@@ -324,6 +315,7 @@
                     </navigationBar>
                     <connections>
                         <segue destination="tqx-6I-shZ" kind="relationship" relationship="rootViewController" id="7II-3v-92c"/>
+                        <segue destination="O8Q-Q2-Fif" kind="show" identifier="navigateToProfile" id="9rF-r2-zyA"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="La4-5V-CxU" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -33,8 +33,8 @@ UITableViewDelegate, UITableViewDataSource {
     
     private func redirectToUseProfile()
     {
-      
-        self.performSegue(withIdentifier: "navigateToProfile", sender: self)
+    
+        self.navigationController?.performSegue(withIdentifier: "navigateToProfile", sender: self)
     
         
     }
