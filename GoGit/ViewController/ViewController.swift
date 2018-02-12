@@ -53,7 +53,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let contentView = cell.contentView
         let margin=CGFloat(5)
-        cell.contentView.layoutMargins.bottom=margin
+        contentView.layoutMargins.bottom=margin
        // cell.contentView.layoutMargins.top=margin
         //cell.contentView.layoutMargins.left=margin
         //cell.contentView.layoutMargins.right=margin
