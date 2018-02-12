@@ -14,17 +14,31 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var email: UILabel!
     @IBOutlet weak var displayName: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
-    var user:User!
+    @IBOutlet weak var repoCount: UILabel!
+    @IBOutlet weak var starCount: UILabel!
+    @IBOutlet weak var followrsCount: UILabel!
+    @IBOutlet weak var followingCount: UILabel!
+    
+    
+    var user:Login!
     @IBOutlet weak var navigation: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-         user=Auth.auth().currentUser
+         user=Constants.getLoginData()
         navigationController?.hidesBarsOnSwipe=true
         if((user==nil)==false){
-        profileImageView.sd_setImage(with: user.photoURL)
-            displayName.text=user.displayName?.uppercased()
+            let url=URL(string:user.avatar_url!)
+           profileImageView.sd_setImage(with: url)
+            displayName.text=user.name?.uppercased()
             email.text=user.email
-            UserDefaults.standard.value(forKey: "access_token")
+            
+            repoCount.text="Reps \(user.public_repos!+user.total_private_repos!+user.owned_private_repos!)"
+            
+            starCount.text="Stars \(0)"
+            followrsCount.text="Followers \(user.followers!)"
+            followingCount.text="Following \(user.following!)"
+            //UserDefaults.standard.value(forKey: "access_token")
+            
         }
         
         // Do any additional setup after loading the view.

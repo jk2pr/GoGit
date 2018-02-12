@@ -262,9 +262,13 @@
                     <connections>
                         <outlet property="displayName" destination="Q2Q-IQ-0Eu" id="Xcd-km-4g1"/>
                         <outlet property="email" destination="ClB-sc-cAi" id="FHX-z1-OJG"/>
+                        <outlet property="followingCount" destination="eDu-rY-5eq" id="8fR-Vd-jH6"/>
+                        <outlet property="followrsCount" destination="SwI-Wl-CvF" id="MX3-1K-XOO"/>
                         <outlet property="navigation" destination="uYL-ho-n0s" id="VPl-Jn-6Jc"/>
                         <outlet property="navigationItem" destination="uYL-ho-n0s" id="iVl-i7-lyB"/>
                         <outlet property="profileImageView" destination="fVP-NK-Byc" id="35f-Wv-eIA"/>
+                        <outlet property="repoCount" destination="aP5-Qm-6wK" id="h3J-dM-7pg"/>
+                        <outlet property="starCount" destination="gLx-p2-Y2l" id="JRT-bR-6uw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ETZ-oV-776" userLabel="First Responder" sceneMemberID="firstResponder"/>
