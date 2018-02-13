@@ -10,14 +10,6 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
-    
-    override init(style: UITableViewCellStyle, reuseIdentifier: String!) {
-        super.init(style: UITableViewCellStyle.value1, reuseIdentifier: reuseIdentifier)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
