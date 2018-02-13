@@ -192,6 +192,7 @@
 		D479A2451FE4CEAE00632DC0 /* GoGit */ = {
 			isa = PBXGroup;
 			children = (
+				D4F878A42033196300D8A0DD /* CustomView */,
 				D41A7C492025340E008BC211 /* Home */,
 				D4C1C1EC201DE0EB00A5BCFC /* Model */,
 				D459DB4F201D7A0E000D63F9 /* Utils */,
@@ -200,8 +201,6 @@
 				D459DB4C201D7949000D63F9 /* ViewController */,
 				D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */,
 				D479A24A1FE4CEAE00632DC0 /* Main.storyboard */,
-				D42F067620328610000F0DC1 /* TableViewCell.swift */,
-				D42F067720328610000F0DC1 /* TableViewCell.xib */,
 				D479A24F1FE4CEAE00632DC0 /* LaunchScreen.storyboard */,
 				D479A2521FE4CEAE00632DC0 /* Info.plist */,
 				D40683032018B1A800ED558A /* GoogleService-Info.plist */,
@@ -225,6 +224,15 @@
 				74E0EB154CEBD934A80093E6 /* Pods_GoGit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4F878A42033196300D8A0DD /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				D42F067620328610000F0DC1 /* TableViewCell.swift */,
+				D42F067720328610000F0DC1 /* TableViewCell.xib */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
