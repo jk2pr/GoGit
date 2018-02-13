@@ -10,6 +10,8 @@
 		D40683042018B1A800ED558A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D40683032018B1A800ED558A /* GoogleService-Info.plist */; };
 		D40BAF4D1FF0E14D00586787 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BAF4C1FF0E14D00586787 /* WebViewController.swift */; };
 		D41A7C4B20253449008BC211 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41A7C4A20253449008BC211 /* HomeViewController.swift */; };
+		D42F067820328610000F0DC1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42F067620328610000F0DC1 /* TableViewCell.swift */; };
+		D42F067920328610000F0DC1 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D42F067720328610000F0DC1 /* TableViewCell.xib */; };
 		D4367184203006DF00BF1B68 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4367182203006DE00BF1B68 /* Plan.swift */; };
 		D4367185203006DF00BF1B68 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4367183203006DF00BF1B68 /* Login.swift */; };
 		D43671872030709700BF1B68 /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43671862030709700BF1B68 /* Switcher.swift */; };
@@ -50,6 +52,8 @@
 		D40683032018B1A800ED558A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D40BAF4C1FF0E14D00586787 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		D41A7C4A20253449008BC211 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D42F067620328610000F0DC1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		D42F067720328610000F0DC1 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		D4367182203006DE00BF1B68 /* Plan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
 		D4367183203006DF00BF1B68 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		D43671862030709700BF1B68 /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
@@ -196,6 +200,8 @@
 				D459DB4C201D7949000D63F9 /* ViewController */,
 				D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */,
 				D479A24A1FE4CEAE00632DC0 /* Main.storyboard */,
+				D42F067620328610000F0DC1 /* TableViewCell.swift */,
+				D42F067720328610000F0DC1 /* TableViewCell.xib */,
 				D479A24F1FE4CEAE00632DC0 /* LaunchScreen.storyboard */,
 				D479A2521FE4CEAE00632DC0 /* Info.plist */,
 				D40683032018B1A800ED558A /* GoogleService-Info.plist */,
@@ -285,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D479A2511FE4CEAE00632DC0 /* LaunchScreen.storyboard in Resources */,
+				D42F067920328610000F0DC1 /* TableViewCell.xib in Resources */,
 				D40683042018B1A800ED558A /* GoogleService-Info.plist in Resources */,
 				D4CA4C49202B276100864560 /* Assets.xcassets in Resources */,
 				D479A24C1FE4CEAE00632DC0 /* Main.storyboard in Resources */,
@@ -371,6 +378,7 @@
 				D4FE07C32016AB2A00719F9D /* LoginAlertViewController.swift in Sources */,
 				D4B0D60E2021ABB7003EAC99 /* Colors.swift in Sources */,
 				D479A2491FE4CEAE00632DC0 /* ViewController.swift in Sources */,
+				D42F067820328610000F0DC1 /* TableViewCell.swift in Sources */,
 				D4C1C1EE201DE10800A5BCFC /* GitHubUserData.swift in Sources */,
 				D4BC585520269FF50054B90C /* Actor.swift in Sources */,
 				D4367185203006DF00BF1B68 /* Login.swift in Sources */,

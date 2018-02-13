@@ -54,10 +54,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let contentView = cell.contentView
         let margin=CGFloat(5)
         contentView.layoutMargins.bottom=margin
-       // cell.contentView.layoutMargins.top=margin
-        //cell.contentView.layoutMargins.left=margin
-        //cell.contentView.layoutMargins.right=margin
-        
         cell.backgroundColor=UIColor.white
         //contentView.backgroundColor=UIColor.lightGray
         contentView.layer.cornerRadius=1

@@ -22,7 +22,9 @@ class SplashViewController: UIViewController,LoginSuccessCallBack{
     @IBOutlet weak var loginWithGitHub: UIButton!
     var user:User!
     
-   
+    override func viewDidLoad() {
+    
+    }
     override func viewWillAppear(_ animated: Bool) {
     
         user=Auth.auth().currentUser

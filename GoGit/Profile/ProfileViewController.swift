@@ -9,7 +9,9 @@
 import UIKit
 import Firebase
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
+    
+  
 
     @IBOutlet weak var email: UILabel!
     @IBOutlet weak var displayName: UILabel!
@@ -39,15 +41,45 @@ class ProfileViewController: UIViewController {
             followingCount.text="Following \(user.following!)"
             //UserDefaults.standard.value(forKey: "access_token")
             
-        }
-        
-        // Do any additional setup after loading the view.
-        
-//        let params = ["client_id": Constants.clientId,
-//                      "client_secret": Constants.secretId,
-//                      "redirect_uri": Constants.REDIRECT_URL_CALLBACK,
-//                   ]
-        
+        }   }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 50
     }
+    
+        public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+        {
+            tableView.backgroundColor=UIColor.clear
+            return 125
+        }
+        public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+        {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) //as! GitHubUserCell
+//
+//            //let cell = tableView.cellForRow(at: indexPath) as! GitHubUserCell
+//            let data=arrRes[indexPath.row]
+//            cell.urlLabel.font=UIFont.boldSystemFont(ofSize: 20.0)
+//            cell.urlLabel.text=data.html_url
+//            cell.namelabel.text=data.login
+//            cell.imageview=cell.viewWithTag(1) as! UIImageView
+//            let url=URL(string:data.avatar_url!)
+//            cell.imageview.sd_setImage(with: url)
+//
+//            let contentView = cell.contentView
+//            let margin=CGFloat(5)
+//            contentView.layoutMargins.bottom=margin
+//            cell.backgroundColor=UIColor.white
+//            //contentView.backgroundColor=UIColor.lightGray
+//            contentView.layer.cornerRadius=1
+//            contentView.layer.borderColor=UIColor.lightGray.cgColor
+//            contentView.layer.borderWidth=0.5
+//            contentView.layer.shadowRadius=1
+//            contentView.layer.shadowOpacity = 0.01
+//            contentView.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: contentView.layer.cornerRadius).cgPath
+//
+            
+            
+            return cell
+        }
+    
     
 }
