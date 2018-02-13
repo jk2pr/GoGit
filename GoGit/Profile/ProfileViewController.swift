@@ -43,12 +43,15 @@ class ProfileViewController: UIViewController,UITableViewDelegate, UITableViewDa
             
         }   }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let nibName = UINib(nibName: "TableViewCell", bundle:nil)
+        tableView.register(nibName, forCellReuseIdentifier: "cell")
         return 50
     }
     
         public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
         {
             tableView.backgroundColor=UIColor.clear
+            //tableView.isScrollEnabled=false;
             return 125
         }
         public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
