@@ -24,6 +24,8 @@ class ProfileViewController: UIViewController,UITableViewDelegate, UITableViewDa
     
     
     var user:Login!
+    var repos:[Repository] = []
+
     @IBOutlet weak var navigation: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,14 +54,15 @@ class ProfileViewController: UIViewController,UITableViewDelegate, UITableViewDa
         let headers=["Authorization":"token "+accessToken,
                      "Accept": "application/json"]
         RxAlamofire.requestJSON(.get, Constants.getLoginData().repos_url!,headers:headers)
-            .subscribe(onNext:{[weak self](r, json) in
+            .subscribe(onNext:{(r, json) in
                  print("Repos Data \(json)")
-                //let d=json as! NSDictionary
-                
-               // let defaults = UserDefaults.standard
-             //   let data=Repository(dictionary:d)
-               // print("Repos Data \(data!)")
+                let d=json as! NSArray
+                for dic  in d{
+                    let ddd = dic as! NSDictionary
+                    let repo = Repository(dictionary:ddd)
+                    self.repos.append(repo!)
                 }
+            }
                 ,
                        onError: {  (error) in
                         print(error.localizedDescription)
