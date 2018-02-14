@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import RxAlamofire
 
 class ProfileViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
@@ -41,7 +42,34 @@ class ProfileViewController: UIViewController,UITableViewDelegate, UITableViewDa
             followingCount.text="Following \(user.following!)"
             //UserDefaults.standard.value(forKey: "access_token")
             
-        }   }
+        getUserRepository()
+        }
+        
+    }
+    
+    func getUserRepository(){
+        let accessToken=UserDefaults.standard.value(forKey: "access_token") as! String
+        let headers=["Authorization":"token "+accessToken,
+                     "Accept": "application/json"]
+        RxAlamofire.requestJSON(.get, Constants.getLoginData().repos_url!,headers:headers)
+            .subscribe(onNext:{[weak self](r, json) in
+                 print("Repos Data \(json)")
+                //let d=json as! NSDictionary
+                
+               // let defaults = UserDefaults.standard
+             //   let data=Repository(dictionary:d)
+               // print("Repos Data \(data!)")
+                }
+                ,
+                       onError: {  (error) in
+                        print(error.localizedDescription)
+            },
+                       onCompleted:{
+                        print("onCompleted")
+            })
+        
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let nibName = UINib(nibName: "TableViewCell", bundle:nil)
         tableView.register(nibName, forCellReuseIdentifier: "cell")

@@ -40,7 +40,7 @@ UITableViewDelegate, UITableViewDataSource {
     }
     @IBAction func onMore(_ sender: UIBarButtonItem) {
         
-        print("More click")
+      //  print("More click")
         
         let alertController = UIAlertController(title: "Signed in as jk2pr", message: nil, preferredStyle: .actionSheet)
         
@@ -80,17 +80,8 @@ UITableViewDelegate, UITableViewDataSource {
         let headers=["Authorization":"token "+accessToken,
                      "Accept": "application/json"]
     
-        
-        //?page=1&per_page=100"
-        
-       // let defaults = UserDefaults.standard
-        
-        let user=Constants.getLoginData()
-        //let user = NSKeyedUnarchiver.unarchiveObject(with: decoded as! Data) as! Login
-
-        
-       // let user=defaults.object(forKey: "user") as! Login
-        let feedUrl=Constants.feedUrl.replacingOccurrences(of: "LOGIN_USER", with: user.login!)
+       let user=Constants.getLoginData()
+       let feedUrl=Constants.feedUrl.replacingOccurrences(of: "LOGIN_USER", with: user.login!)
         var components = URLComponents(string: feedUrl)!
         components.queryItems = [URLQueryItem(name: "page", value: "1"),
                                  URLQueryItem(name: "per_page", value: "100")]
@@ -108,7 +99,7 @@ UITableViewDelegate, UITableViewDataSource {
                 for dic in someDictionaryFromJSON {
                 let repo = Json4Swift_Base(dictionary: (dic as! NSDictionary))
                     self.repos.append(repo!)
-                     print(dic)
+                  //   print(dic)
                 }
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
