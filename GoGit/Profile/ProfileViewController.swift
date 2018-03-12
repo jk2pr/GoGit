@@ -23,8 +23,10 @@ class ProfileViewController: UIViewController,UITableViewDelegate, UITableViewDa
     @IBOutlet weak var followingCount: UILabel!
     
     
+    
     var user:Login!
     var repos:[Repository] = []
+    
 
     @IBOutlet weak var navigation: UINavigationItem!
     override func viewDidLoad() {
@@ -56,7 +58,7 @@ class ProfileViewController: UIViewController,UITableViewDelegate, UITableViewDa
         let image=UIImageView(frame:CGRect(x:10,y:5,width:tableView.frame.width,height:60))
         image.backgroundColor=UIColor.yellow
         let segmentedControl=UISegmentedControl(frame:CGRect(x:10,y:image.frame.height+5,width:tableView.frame.width,height:60))
-        segmentedControl.backgroundColor=UIColor.red
+        segmentedControl.backgroundColor=UIColor.clear
        
         segmentedControl.insertSegment(withTitle: "Repository", at: 0, animated: true)
         segmentedControl.insertSegment(withTitle: "Followers", at: 1, animated: true)
