@@ -55,15 +55,15 @@ class ProfileViewController: UIViewController,UITableViewDelegate, UITableViewDa
       //
         let v=UIView()
         v.backgroundColor=UIColor.cyan
-        let image=UIImageView(frame:CGRect(x:10,y:5,width:tableView.frame.width,height:60))
+        let image=UIImageView(frame:CGRect(x:0,y:5,width:tableView.frame.width,height:60))
         image.backgroundColor=UIColor.yellow
-        let segmentedControl=UISegmentedControl(frame:CGRect(x:10,y:image.frame.height+5,width:tableView.frame.width,height:60))
+        let segmentedControl=UISegmentedControl(frame:CGRect(x:0,y:image.frame.height+5,width:tableView.frame.width,height:60))
         segmentedControl.backgroundColor=UIColor.clear
        
         segmentedControl.insertSegment(withTitle: "Repository", at: 0, animated: true)
         segmentedControl.insertSegment(withTitle: "Followers", at: 1, animated: true)
         segmentedControl.insertSegment(withTitle: "Followings", at: 2, animated: true)
-         segmentedControl.setTitle("Test", forSegmentAt: 0)
+        segmentedControl.setTitle("Test", forSegmentAt: 0)
         v.addSubview(image)
         v.addSubview(segmentedControl)
         return v
@@ -72,7 +72,7 @@ class ProfileViewController: UIViewController,UITableViewDelegate, UITableViewDa
         let accessToken=UserDefaults.standard.value(forKey: "access_token") as! String
         let headers=["Authorization":"token "+accessToken,
                      "Accept": "application/json"]
-        RxAlamofire.requestJSON(.get, Constants.getLoginData().repos_url!,headers:headers)
+        _=RxAlamofire.requestJSON(.get, Constants.getLoginData().repos_url!,headers:headers)
             .subscribe(onNext:{(r, json) in
                  print("Repos Data \(json)")
                 let d=json as! NSArray
