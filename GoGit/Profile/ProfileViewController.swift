@@ -11,8 +11,6 @@ import Firebase
 import RxAlamofire
 
 class ProfileViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
-    
-  
 
     @IBOutlet weak var email: UILabel!
     @IBOutlet weak var displayName: UILabel!
@@ -22,8 +20,7 @@ class ProfileViewController: UIViewController,UITableViewDelegate, UITableViewDa
     @IBOutlet weak var followrsCount: UILabel!
     @IBOutlet weak var followingCount: UILabel!
     
-    
-    
+
     var user:Login!
     var repos:[Repository] = []
     
