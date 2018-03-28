@@ -60,6 +60,7 @@ class ProfileViewController: UIViewController,UITableViewDelegate, UITableViewDa
         segmentedControl.insertSegment(withTitle: "Repository", at: 0, animated: true)
         segmentedControl.insertSegment(withTitle: "Followers", at: 1, animated: true)
         segmentedControl.insertSegment(withTitle: "Followings", at: 2, animated: true)
+        segmentedControl.insertSegment(withTitle: "Stars", at: 2, animated: true)
         segmentedControl.setTitle("Test", forSegmentAt: 0)
         v.addSubview(image)
         v.addSubview(segmentedControl)
