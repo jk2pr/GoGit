@@ -13,7 +13,6 @@ import Firebase
 import SDWebImage
 
 class GitHubRepoCell:UITableViewCell{
-    
     @IBOutlet weak var actorName: UILabel!
     @IBOutlet weak var actorImage: UIImageView!
 }
