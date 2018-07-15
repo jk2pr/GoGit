@@ -18,6 +18,7 @@ static let clientId="5db96facac0277a35f64",
     static var user:Login!
     static func getLoginData() -> Login
     {
+        
         if(Constants.user==nil){
             Constants.user=Login(dictionary: UserDefaults.standard.object(forKey: "user") as! NSDictionary)
         }
