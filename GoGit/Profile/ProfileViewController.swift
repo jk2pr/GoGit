@@ -30,7 +30,7 @@ class ProfileViewController: UIViewController,UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
          user=Constants.getLoginData()
         navigationController?.hidesBarsOnSwipe=true
-        if((user==nil)==false){
+        if(!(user==nil)){
             let url=URL(string:user.avatar_url!)
            profileImageView.sd_setImage(with: url)
             displayName.text=user.name?.uppercased()
