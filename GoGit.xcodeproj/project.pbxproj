@@ -17,6 +17,7 @@
 		D43671872030709700BF1B68 /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43671862030709700BF1B68 /* Switcher.swift */; };
 		D459DB51201D7A45000D63F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D459DB50201D7A44000D63F9 /* Constants.swift */; };
 		D45A8ABA20FCCE5300381942 /* ProfileViewXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = D45A8AB920FCCE5300381942 /* ProfileViewXib.xib */; };
+		D45A8ABC20FE223D00381942 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45A8ABB20FE223D00381942 /* ProfileHeaderView.swift */; };
 		D479A2471FE4CEAE00632DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */; };
 		D479A2491FE4CEAE00632DC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479A2481FE4CEAE00632DC0 /* ViewController.swift */; };
 		D479A24C1FE4CEAE00632DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D479A24A1FE4CEAE00632DC0 /* Main.storyboard */; };
@@ -63,6 +64,7 @@
 		D43671862030709700BF1B68 /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
 		D459DB50201D7A44000D63F9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D45A8AB920FCCE5300381942 /* ProfileViewXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewXib.xib; sourceTree = "<group>"; };
+		D45A8ABB20FE223D00381942 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		D479A2431FE4CEAE00632DC0 /* GoGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D479A2481FE4CEAE00632DC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -213,7 +215,6 @@
 				D479A24F1FE4CEAE00632DC0 /* LaunchScreen.storyboard */,
 				D479A2521FE4CEAE00632DC0 /* Info.plist */,
 				D40683032018B1A800ED558A /* GoogleService-Info.plist */,
-				D45A8AB920FCCE5300381942 /* ProfileViewXib.xib */,
 			);
 			path = GoGit;
 			sourceTree = "<group>";
@@ -249,8 +250,10 @@
 		D4F878A42033196300D8A0DD /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				D45A8AB920FCCE5300381942 /* ProfileViewXib.xib */,
 				D42F067620328610000F0DC1 /* TableViewCell.swift */,
 				D42F067720328610000F0DC1 /* TableViewCell.xib */,
+				D45A8ABB20FE223D00381942 /* ProfileHeaderView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				D4B0D60E2021ABB7003EAC99 /* Colors.swift in Sources */,
 				D479A2491FE4CEAE00632DC0 /* ViewController.swift in Sources */,
 				D42F067820328610000F0DC1 /* TableViewCell.swift in Sources */,
+				D45A8ABC20FE223D00381942 /* ProfileHeaderView.swift in Sources */,
 				D4C1C1EE201DE10800A5BCFC /* GitHubUserData.swift in Sources */,
 				D4BC585520269FF50054B90C /* Actor.swift in Sources */,
 				D4367185203006DF00BF1B68 /* Login.swift in Sources */,
