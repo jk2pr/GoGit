@@ -18,6 +18,7 @@
 		D459DB51201D7A45000D63F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D459DB50201D7A44000D63F9 /* Constants.swift */; };
 		D45A8ABA20FCCE5300381942 /* ProfileViewXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = D45A8AB920FCCE5300381942 /* ProfileViewXib.xib */; };
 		D45A8ABC20FE223D00381942 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45A8ABB20FE223D00381942 /* ProfileHeaderView.swift */; };
+		D45A8AC020FF05F400381942 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45A8ABF20FF05F400381942 /* Extensions.swift */; };
 		D479A2471FE4CEAE00632DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */; };
 		D479A2491FE4CEAE00632DC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479A2481FE4CEAE00632DC0 /* ViewController.swift */; };
 		D479A24C1FE4CEAE00632DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D479A24A1FE4CEAE00632DC0 /* Main.storyboard */; };
@@ -65,6 +66,7 @@
 		D459DB50201D7A44000D63F9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D45A8AB920FCCE5300381942 /* ProfileViewXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewXib.xib; sourceTree = "<group>"; };
 		D45A8ABB20FE223D00381942 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		D45A8ABF20FF05F400381942 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D479A2431FE4CEAE00632DC0 /* GoGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D479A2461FE4CEAE00632DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D479A2481FE4CEAE00632DC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +182,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		D45A8ABE20FF05CF00381942 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D45A8ABF20FF05F400381942 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D479A23A1FE4CEAD00632DC0 = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +213,7 @@
 		D479A2451FE4CEAE00632DC0 /* GoGit */ = {
 			isa = PBXGroup;
 			children = (
+				D45A8ABE20FF05CF00381942 /* Extensions */,
 				D4F878A42033196300D8A0DD /* CustomView */,
 				D41A7C492025340E008BC211 /* Home */,
 				D4C1C1EC201DE0EB00A5BCFC /* Model */,
@@ -417,6 +428,7 @@
 				D4BC585520269FF50054B90C /* Actor.swift in Sources */,
 				D4367185203006DF00BF1B68 /* Login.swift in Sources */,
 				D4BC585320269FF50054B90C /* Json4Swift_Base.swift in Sources */,
+				D45A8AC020FF05F400381942 /* Extensions.swift in Sources */,
 				D479A2471FE4CEAE00632DC0 /* AppDelegate.swift in Sources */,
 				D4BC585620269FF50054B90C /* Repo.swift in Sources */,
 				D4BC585420269FF50054B90C /* Payload.swift in Sources */,

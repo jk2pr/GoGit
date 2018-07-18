@@ -19,7 +19,7 @@ class ProfileHeaderView: UIView {
     }
     
     func commonInit()  {
-        let contentView = Bundle.main?.loadNibNamed("ProfileHeaderView",owner:self,options:nil) as UIView
-        self.addSubview(contentView!)
+        let nib=loadNib(nibName: "ProfileHeaderView")
+        self.addSubview(nib)
     }
 }
