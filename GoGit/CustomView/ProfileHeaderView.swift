@@ -9,17 +9,8 @@
 import UIKit
 
 class ProfileHeaderView: UIView {
-    override  init(frame:CGRect){
-        super.init(frame:frame)
-        
-        
-    }
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
+   
+    @IBOutlet weak var profileImageView: UIImageView!
     
-    func commonInit()  {
-        let nib=loadNib(nibName: "ProfileHeaderView")
-        self.addSubview(nib)
-    }
+    @IBOutlet weak var displayName: UILabel!
 }
